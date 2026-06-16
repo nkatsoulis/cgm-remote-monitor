@@ -76,6 +76,11 @@ function create (env, ctx) {
     console.info('Security settings: INSECURE_USE_HTTP=', insecureUseHttp, ', SECURE_HSTS_HEADER=', secureHstsHeader);
   }
 
+  // Lightweight health check for NAS container proxy health monitoring, always available
+  app.get('/health', (req, res) => {
+    res.json({ status: 'ok', uptime: Math.floor(process.uptime()) });
+  });
+
   app.set('view engine', 'ejs');
   // this allows you to render .html files as templates in addition to .ejs
   app.engine('html', require('ejs').renderFile);
