@@ -1,17 +1,18 @@
 # Deploys cdl-site/ to Cloudflare Pages.
 #
 # One-time setup (only you can do these — they need your Cloudflare account):
-#   1. Cloudflare dashboard → Workers & Pages → Create → Pages → "Direct Upload",
-#      name the project  wichita-falls-cdl  (or change PROJECT_NAME below to match).
-#   2. My Profile → API Tokens → Create Token → template "Edit Cloudflare Workers",
+#   1. My Profile → API Tokens → Create Token → template "Edit Cloudflare Workers",
 #      or a custom token with the  Account › Cloudflare Pages › Edit  permission.
-#   3. This repo → Settings → Secrets and variables → Actions → New repository secret:
-#        CLOUDFLARE_API_TOKEN   the token from step 2
+#   2. This repo → Settings → Secrets and variables → Actions → New repository secret:
+#        CLOUDFLARE_API_TOKEN   the token from step 1
 #        CLOUDFLARE_ACCOUNT_ID  Cloudflare dashboard → Workers & Pages → Account ID
-#   4. Run this workflow (Actions tab → Deploy CDL site → Run workflow), or push to
-#      one of the branches below.
-#   5. Pages project → Custom domains → Set up a domain → cdl.wichitafallsequipment.com,
-#      then add the DNS record Cloudflare shows you at whoever hosts the domain's DNS.
+#          (right-hand sidebar)
+#   That's it. The workflow creates the Pages project itself on first run.
+#
+#   Afterwards, to put it on the real domain:
+#     Pages project → Custom domains → Set up a domain → cdl.wichitafallsequipment.com.
+#     If this domain's DNS is already on Cloudflare the record is created for you;
+#     otherwise add the CNAME it shows you wherever the DNS is hosted.
 #
 # Note: the CNAME file in cdl-site/ is a GitHub Pages convention. Cloudflare Pages ignores
 # it — the custom domain is attached in step 5 instead.
@@ -58,9 +59,19 @@ jobs:
              cdl-site/sitemap.xml cdl-site/CNAME publish/
           echo "Publishing:" && find publish -type f | sort
 
+      # Idempotent: succeeds the first time, harmlessly reports "already exists" after.
+      - name: Create Pages project if missing
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          npx --yes wrangler@3 pages project create "$PROJECT_NAME" --production-branch=main \
+            || echo "Project already exists — continuing to deploy."
+
       - name: Publish to Cloudflare Pages
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy publish --project-name=${{ env.PROJECT_NAME }} --branch=main
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          npx --yes wrangler@3 pages deploy publish \
+            --project-name="$PROJECT_NAME" --branch=main
