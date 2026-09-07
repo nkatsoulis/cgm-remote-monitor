@@ -12,8 +12,11 @@ cdl-site/
 ├── CNAME                      cdl.wichitafallsequipment.com (GitHub Pages custom domain)
 ├── robots.txt, sitemap.xml
 ├── assets/css/styles.css      all styling, light + dark, responsive
+├── assets/js/routing.js       URL-scheme seam (real URLs vs. hash routes)
 ├── assets/js/home.js          renders the test cards and saved best scores
 ├── assets/js/quiz.js          the quiz engine
+├── build-standalone.js        builds dist/index.html, the whole site as one file
+├── dist/index.html            generated — do not edit by hand
 ├── assets/img/favicon.svg
 └── data/
     ├── sections.js            the nine sections: question counts, pass marks, descriptions
@@ -65,6 +68,22 @@ both `index.html` and `test.html`.
 Options are deliberately never "all of the above" / "none of the above", so answer order stays
 meaningful and the banks can be extended safely.
 
+## Single-file build
+
+`node build-standalone.js` regenerates `dist/index.html`: the entire site — CSS, all nine question
+banks, the quiz engine — inlined into one self-contained HTML file with no external requests.
+
+It is not a second copy of the app. It pulls the same CSS, the same data files, the same
+`home.js` and `quiz.js`, and the same page markup out of `index.html` and `test.html`. The only
+difference is the URL scheme, which both sides get from `assets/js/routing.js`: the multi-page site
+uses `test.html?t=<id>&mode=<mode>`, and the single file overrides that seam with hash routes
+(`#/t/<id>/<mode>`). Change a question or a style and re-run the build; the two stay in sync.
+
+Use it for a host that only accepts one file, for sharing a preview, or for offline study — it
+works from a `file://` URL.
+
+Re-run the build after any change to `assets/` or `data/`.
+
 ## Local preview
 
 ```bash
@@ -84,7 +103,7 @@ The `CNAME` file is already set. Any of these work:
 publish/output directory to `cdl-site`, then add `cdl.wichitafallsequipment.com` as a custom domain.
 
 **Any web server** — copy the directory to the docroot for the subdomain. It's all static files;
-no server-side runtime is needed.
+no server-side runtime is needed. If the host only takes a single file, upload `dist/index.html`.
 
 DNS in every case: a `CNAME` record for the `cdl` host pointing at the hosting provider's target.
 

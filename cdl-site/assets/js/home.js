@@ -2,6 +2,7 @@
 (function () {
   'use strict';
 
+  var R = window.CDL_ROUTING;
   var STORE = 'wfe-cdl-best';
 
   function bestScores() {
@@ -14,6 +15,7 @@
     });
   }
 
+  function render() {
   var sections = window.CDL_SECTIONS || [];
   var bank = window.CDL_BANK || {};
   var best = bestScores();
@@ -47,8 +49,8 @@
             '<span><b>' + pool + '</b> in the bank</span>' +
           '</div>' +
           '<div class="actions">' +
-            '<a class="btn" href="test.html?t=' + encodeURIComponent(s.id) + '&amp;mode=study">Study mode</a>' +
-            '<a class="btn secondary" href="test.html?t=' + encodeURIComponent(s.id) + '&amp;mode=exam">Exam mode</a>' +
+            '<a class="btn" href="' + R.testUrl(s.id, 'study') + '">Study mode</a>' +
+            '<a class="btn secondary" href="' + R.testUrl(s.id, 'exam') + '">Exam mode</a>' +
           '</div>' +
         '</article>';
     }).join('');
@@ -57,7 +59,11 @@
   var links = document.getElementById('footer-links');
   if (links) {
     links.innerHTML = sections.map(function (s) {
-      return '<a href="test.html?t=' + encodeURIComponent(s.id) + '&amp;mode=study">' + esc(s.name) + '</a>';
+      return '<a href="' + R.testUrl(s.id, 'study') + '">' + esc(s.name) + '</a>';
     }).join('<br>');
   }
+  }
+
+  window.CDLHome = { render: render };
+  if (!window.CDL_ROUTER && document.getElementById('test-grid')) render();
 })();

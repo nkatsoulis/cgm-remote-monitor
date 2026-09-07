@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Texas CDL Practice Tests</title>
+<meta name="description" content="Free practice tests for every Texas CDL knowledge exam, scored against the state's 80% passing requirement.">
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMxNjIwMmMiLz48cmVjdCB4PSI2IiB5PSIyNiIgd2lkdGg9IjM0IiBoZWlnaHQ9IjIwIiByeD0iMyIgZmlsbD0iI2UwOGEwMCIvPjxwYXRoIGQ9Ik00MCAzMmg5bDcgOHY2aC0xNnoiIGZpbGw9IiNlMDhhMDAiLz48Y2lyY2xlIGN4PSIxOCIgY3k9IjQ4IiByPSI2IiBmaWxsPSIjZjJmNGY3Ii8+PGNpcmNsZSBjeD0iNDYiIGN5PSI0OCIgcj0iNiIgZmlsbD0iI2YyZjRmNyIvPjxjaXJjbGUgY3g9IjE4IiBjeT0iNDgiIHI9IjIuNSIgZmlsbD0iIzE2MjAyYyIvPjxjaXJjbGUgY3g9IjQ2IiBjeT0iNDgiIHI9IjIuNSIgZmlsbD0iIzE2MjAyYyIvPjwvc3ZnPgo=" type="image/svg+xml">
+<meta name="theme-color" content="#16202c">
+<style>
+/* cdl.wichitafallsequipment.com — Texas CDL practice tests */
+
+:root {
+  --ink: #101720;
+  --ink-2: #2c3947;
+  --muted: #5d6b7a;
+  --line: #dfe4ea;
+  --bg: #f2f4f7;
+  --surface: #ffffff;
+  --surface-2: #f7f9fb;
+  --brand: #16202c;
+  --brand-2: #24374b;
+  --accent: #e08a00;
+  --accent-soft: #fff4e0;
+  --good: #17794d;
+  --good-soft: #e6f4ed;
+  --bad: #b3261e;
+  --bad-soft: #fdeceb;
+  --shadow: 0 1px 2px rgba(16,23,32,.06), 0 8px 24px rgba(16,23,32,.06);
+  --radius: 12px;
+  --font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ink: #e9eef4;
+    --ink-2: #c3ceda;
+    --muted: #93a1b1;
+    --line: #2a3543;
+    --bg: #0d131a;
+    --surface: #151d26;
+    --surface-2: #1b242f;
+    --brand: #0b1219;
+    --brand-2: #182533;
+    --accent: #f0a52e;
+    --accent-soft: #2a2113;
+    --good: #56d09a;
+    --good-soft: #14291f;
+    --bad: #ff8f86;
+    --bad-soft: #2b1715;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--bg);
+}
+a { color: inherit; }
+img { max-width: 100%; }
+h1, h2, h3 { line-height: 1.2; margin: 0 0 .5em; letter-spacing: -.02em; }
+h1 { font-size: clamp(1.9rem, 4.5vw, 2.9rem); }
+h2 { font-size: clamp(1.35rem, 3vw, 1.8rem); }
+h3 { font-size: 1.05rem; }
+p { margin: 0 0 1em; }
+
+.wrap { width: 100%; max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+.narrow { max-width: 780px; }
+
+/* ---------- header ---------- */
+.site-header {
+  background: var(--brand);
+  color: #fff;
+  border-bottom: 3px solid var(--accent);
+}
+.site-header .wrap {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 16px; min-height: 68px; flex-wrap: wrap;
+}
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: #fff; padding: 12px 0; }
+.brand .mark {
+  width: 38px; height: 38px; flex: none; border-radius: 8px;
+  background: var(--accent); color: #10161d;
+  display: grid; place-items: center; font-weight: 800; font-size: .95rem; letter-spacing: -.03em;
+}
+.brand .name { font-weight: 700; font-size: 1.02rem; letter-spacing: -.01em; line-height: 1.15; }
+.brand .name span { display: block; font-weight: 400; font-size: .78rem; color: #a9b8c8; letter-spacing: .04em; text-transform: uppercase; }
+.site-nav { display: flex; gap: 20px; font-size: .9rem; padding-bottom: 4px; }
+.site-nav a { color: #c9d5e1; text-decoration: none; }
+.site-nav a:hover { color: #fff; }
+
+/* ---------- hero ---------- */
+.hero {
+  background: linear-gradient(160deg, var(--brand) 0%, var(--brand-2) 100%);
+  color: #fff; padding: 56px 0 60px;
+}
+.hero h1 { color: #fff; max-width: 18ch; }
+.hero .lede { color: #bccbd9; font-size: 1.08rem; max-width: 62ch; }
+.hero .eyebrow {
+  display: inline-block; font-size: .75rem; text-transform: uppercase; letter-spacing: .12em;
+  color: var(--accent); font-weight: 700; margin-bottom: 14px;
+}
+.stat-row { display: flex; flex-wrap: wrap; gap: 28px; margin-top: 30px; }
+.stat b { display: block; font-size: 1.6rem; color: #fff; line-height: 1.1; }
+.stat span { font-size: .8rem; color: #9fb0c1; text-transform: uppercase; letter-spacing: .07em; }
+
+/* ---------- sections ---------- */
+main { padding: 44px 0 10px; }
+.section-head { margin-bottom: 22px; }
+.section-head p { color: var(--muted); max-width: 68ch; margin-bottom: 0; }
+.block { margin-bottom: 52px; }
+
+.grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+
+.card {
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 20px; box-shadow: var(--shadow); display: flex; flex-direction: column;
+}
+.card h3 { margin-bottom: 4px; }
+.card .tag {
+  display: inline-block; align-self: flex-start; font-size: .68rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .08em; padding: 3px 8px; border-radius: 999px; margin-bottom: 10px;
+  background: var(--surface-2); color: var(--muted); border: 1px solid var(--line);
+}
+.card .tag.req { background: var(--accent-soft); color: var(--accent); border-color: transparent; }
+.card .blurb { color: var(--muted); font-size: .92rem; flex: 1; }
+.card .meta {
+  display: flex; gap: 14px; flex-wrap: wrap; font-size: .8rem; color: var(--muted);
+  border-top: 1px solid var(--line); padding-top: 12px; margin-top: 12px;
+}
+.card .meta b { color: var(--ink); font-weight: 600; }
+.card .actions { display: flex; gap: 8px; margin-top: 14px; flex-wrap: wrap; }
+.card .best { font-size: .78rem; color: var(--good); font-weight: 600; margin-top: 10px; }
+.card .best.fail { color: var(--muted); }
+
+/* ---------- buttons ---------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  font: inherit; font-size: .9rem; font-weight: 600; padding: 9px 16px;
+  border-radius: 8px; border: 1px solid transparent; cursor: pointer; text-decoration: none;
+  background: var(--accent); color: #14191f; transition: filter .12s ease, background .12s ease;
+}
+.btn:hover { filter: brightness(1.06); }
+.btn.secondary { background: var(--surface); color: var(--ink); border-color: var(--line); }
+.btn.secondary:hover { background: var(--surface-2); filter: none; }
+.btn.ghost { background: transparent; color: var(--muted); border-color: var(--line); }
+.btn:disabled { opacity: .45; cursor: not-allowed; filter: none; }
+.btn.wide { width: 100%; }
+
+/* ---------- info panels ---------- */
+.panel {
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 24px; box-shadow: var(--shadow);
+}
+.panel + .panel { margin-top: 16px; }
+.cols { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.checklist { list-style: none; padding: 0; margin: 0; }
+.checklist li { position: relative; padding-left: 26px; margin-bottom: 9px; color: var(--ink-2); font-size: .94rem; }
+.checklist li::before {
+  content: ""; position: absolute; left: 6px; top: .55em; width: 7px; height: 7px;
+  border-radius: 2px; background: var(--accent);
+}
+.note {
+  border-left: 3px solid var(--accent); background: var(--accent-soft);
+  padding: 14px 16px; border-radius: 0 8px 8px 0; font-size: .92rem; color: var(--ink-2);
+}
+.note p:last-child { margin-bottom: 0; }
+table.plain { width: 100%; border-collapse: collapse; font-size: .92rem; }
+table.plain th, table.plain td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+table.plain th { font-size: .74rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+table.plain td b { font-weight: 600; }
+.scroll-x { overflow-x: auto; }
+
+/* ---------- footer ---------- */
+.site-footer {
+  margin-top: 40px; background: var(--brand); color: #93a5b6;
+  padding: 36px 0; font-size: .86rem;
+}
+.site-footer strong { color: #fff; }
+.site-footer a { color: #c9d5e1; }
+.site-footer .cols { gap: 28px; }
+.disclaimer { font-size: .8rem; color: #7c8d9e; border-top: 1px solid #253544; padding-top: 18px; margin-top: 24px; }
+
+/* ---------- quiz ---------- */
+.quiz-top {
+  background: var(--surface); border-bottom: 1px solid var(--line);
+  position: sticky; top: 0; z-index: 20;
+}
+.quiz-top .wrap { display: flex; align-items: center; gap: 16px; min-height: 60px; flex-wrap: wrap; }
+.quiz-top .title { font-weight: 700; margin-right: auto; }
+.quiz-top .title small { display: block; font-weight: 400; font-size: .78rem; color: var(--muted); }
+.pill {
+  font-size: .78rem; font-weight: 600; padding: 5px 11px; border-radius: 999px;
+  background: var(--surface-2); border: 1px solid var(--line); color: var(--ink-2); white-space: nowrap;
+}
+.pill.warn { color: var(--bad); border-color: var(--bad); }
+.progress-track { height: 4px; background: var(--line); }
+.progress-bar { height: 100%; width: 0; background: var(--accent); transition: width .25s ease; }
+
+.question-card {
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 26px; box-shadow: var(--shadow); margin: 28px 0;
+}
+.qnum { font-size: .76rem; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); font-weight: 700; }
+.qtext { font-size: 1.18rem; font-weight: 600; margin: 8px 0 20px; line-height: 1.45; }
+
+.options { display: grid; gap: 10px; }
+.option {
+  display: flex; gap: 12px; align-items: flex-start; width: 100%; text-align: left;
+  font: inherit; font-size: .98rem; color: var(--ink);
+  background: var(--surface-2); border: 1px solid var(--line); border-radius: 10px;
+  padding: 14px 16px; cursor: pointer; transition: border-color .12s ease, background .12s ease;
+}
+.option:hover:not(:disabled) { border-color: var(--accent); }
+.option:disabled { cursor: default; }
+.option .key {
+  flex: none; width: 26px; height: 26px; border-radius: 6px; display: grid; place-items: center;
+  background: var(--surface); border: 1px solid var(--line); font-size: .82rem; font-weight: 700; color: var(--muted);
+}
+.option.selected { border-color: var(--accent); background: var(--accent-soft); }
+.option.selected .key { background: var(--accent); color: #14191f; border-color: transparent; }
+.option.correct { border-color: var(--good); background: var(--good-soft); }
+.option.correct .key { background: var(--good); color: #fff; border-color: transparent; }
+.option.wrong { border-color: var(--bad); background: var(--bad-soft); }
+.option.wrong .key { background: var(--bad); color: #fff; border-color: transparent; }
+
+.explain {
+  margin-top: 18px; padding: 14px 16px; border-radius: 8px; font-size: .92rem;
+  background: var(--surface-2); border-left: 3px solid var(--muted); color: var(--ink-2);
+}
+.explain.right { border-left-color: var(--good); background: var(--good-soft); }
+.explain.wrong { border-left-color: var(--bad); background: var(--bad-soft); }
+.explain b { display: block; margin-bottom: 3px; }
+
+.quiz-actions { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.quiz-actions .spacer { flex: 1; }
+
+/* ---------- results ---------- */
+.score-hero {
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 32px; text-align: center; box-shadow: var(--shadow); margin: 28px 0;
+}
+.score-ring {
+  width: 132px; height: 132px; border-radius: 50%; margin: 0 auto 18px;
+  display: grid; place-items: center; font-size: 2.1rem; font-weight: 800; letter-spacing: -.03em;
+}
+.score-ring.pass { background: var(--good-soft); color: var(--good); border: 6px solid var(--good); }
+.score-ring.fail { background: var(--bad-soft); color: var(--bad); border: 6px solid var(--bad); }
+.verdict { font-size: 1.5rem; font-weight: 700; margin-bottom: 6px; }
+.verdict.pass { color: var(--good); }
+.verdict.fail { color: var(--bad); }
+.score-detail { color: var(--muted); margin-bottom: 22px; }
+.review-item { border-top: 1px solid var(--line); padding: 18px 0; }
+.review-item .qtext { font-size: 1rem; margin-bottom: 12px; }
+.review-line { font-size: .9rem; margin-bottom: 5px; }
+.review-line .lbl { color: var(--muted); display: inline-block; min-width: 92px; }
+.review-line.you .val { color: var(--bad); font-weight: 600; }
+.review-line.ans .val { color: var(--good); font-weight: 600; }
+
+.mode-choice { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin: 22px 0; }
+.mode-card {
+  text-align: left; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 20px; cursor: pointer; font: inherit; color: var(--ink); box-shadow: var(--shadow);
+}
+.mode-card:hover { border-color: var(--accent); }
+.mode-card b { display: block; font-size: 1.05rem; margin-bottom: 4px; }
+.mode-card span { font-size: .9rem; color: var(--muted); }
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+
+@media (max-width: 640px) {
+  .hero { padding: 40px 0 44px; }
+  .question-card { padding: 20px; }
+  .quiz-top .title small { display: none; }
+}
+@media print { .site-header, .site-footer, .quiz-actions, .btn { display: none; } }
+
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#/">
+      <span class="mark">WF</span>
+      <span class="name">Wichita Falls Equipment<span>Texas CDL Test Prep</span></span>
+    </a>
+    <nav class="site-nav">
+      <a href="#/">Practice tests</a>
+      <a href="#which">Which tests do I need?</a>
+      <a href="#howto">How the exam works</a>
+    </nav>
+  </div>
+</header>
+
+<div id="view-home">
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Texas Department of Public Safety &middot; Knowledge exams</span>
+    <h1>Pass every Texas CDL knowledge test.</h1>
+    <p class="lede">Free practice exams for all nine sections a Texas commercial driver may need &mdash; written from the
+      Texas Commercial Motor Vehicle Drivers Handbook, scored the way the state scores you, with an explanation on
+      every question. No account, no download, nothing to pay.</p>
+    <div class="stat-row">
+      <div class="stat"><b id="stat-questions">295</b><span>Practice questions</span></div>
+      <div class="stat"><b>9</b><span>Test sections</span></div>
+      <div class="stat"><b>80%</b><span>Required to pass</span></div>
+    </div>
+  </div>
+</section>
+<main>
+  <div class="wrap">
+
+    <div class="block" id="tests">
+      <div class="section-head">
+        <h2>Practice tests</h2>
+        <p>Every attempt draws a fresh, randomized set of questions from the bank. Study mode shows you the answer and
+          the reasoning as you go; exam mode holds everything back and grades you at the end, the way DPS does.</p>
+      </div>
+      <div class="grid" id="test-grid"></div>
+    </div>
+
+    <div class="block" id="which">
+      <div class="section-head">
+        <h2>Which tests do I need?</h2>
+        <p>Texas issues three CDL classes plus endorsements. What you must pass depends on the vehicle you intend to
+          drive and what you intend to haul in it.</p>
+      </div>
+      <div class="panel scroll-x">
+        <table class="plain">
+          <thead>
+            <tr><th>If you want to drive&hellip;</th><th>Class</th><th>Knowledge exams required</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>A tractor-trailer</b> or any combination over 26,001 lbs with a towed unit over 10,000 lbs</td>
+              <td>Class A</td>
+              <td>General Knowledge, Combination Vehicles, and Air Brakes if the vehicle is air-brake equipped</td>
+            </tr>
+            <tr>
+              <td><b>A single heavy truck or bus</b> over 26,001 lbs (dump truck, box truck, transit bus)</td>
+              <td>Class B</td>
+              <td>General Knowledge, plus Air Brakes if the vehicle is air-brake equipped</td>
+            </tr>
+            <tr>
+              <td><b>A smaller vehicle</b> carrying 16+ passengers or placarded hazardous materials</td>
+              <td>Class C</td>
+              <td>General Knowledge, plus the Passenger or Hazmat endorsement exam</td>
+            </tr>
+            <tr><td><b>Pull two or three trailers</b></td><td>T endorsement</td><td>Doubles &amp; Triples</td></tr>
+            <tr><td><b>Haul liquid or gas in bulk</b> over 1,000 gallons</td><td>N endorsement</td><td>Tank Vehicles</td></tr>
+            <tr><td><b>Haul placarded hazardous materials</b></td><td>H endorsement</td><td>Hazardous Materials, plus a TSA background check and fingerprints</td></tr>
+            <tr><td><b>Drive a bus</b> designed for 16+ people including the driver</td><td>P endorsement</td><td>Passenger Transport</td></tr>
+            <tr><td><b>Drive a school bus</b></td><td>S endorsement</td><td>Passenger Transport <em>and</em> School Bus, plus a background check and a skills test in a bus</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="note" style="margin-top:16px">
+        <p><b>About the air brake restriction.</b> If you skip the Air Brakes exam &mdash; or take your skills test in a
+          vehicle without air brakes &mdash; Texas places an &ldquo;L&rdquo; restriction on your license and you may not
+          legally drive an air-brake vehicle. For most commercial work in North Texas, that restriction ends the job
+          before it starts. Take the test.</p>
+      </div>
+    </div>
+
+    <div class="block" id="howto">
+      <div class="section-head">
+        <h2>How the Texas exam works</h2>
+      </div>
+      <div class="cols">
+        <div class="panel">
+          <h3>Scoring</h3>
+          <p>Every CDL knowledge exam in Texas is multiple choice and requires <b>80% correct</b> to pass. The General
+            Knowledge exam is 50 questions, so you need 40 right. Endorsement exams are shorter &mdash; typically 20 to
+            30 questions &mdash; and the same 80% applies.</p>
+          <p style="margin-bottom:0">The practice tests here use the same question counts and the same passing bar.</p>
+        </div>
+        <div class="panel">
+          <h3>Before you go to DPS</h3>
+          <ul class="checklist">
+            <li>Complete Entry-Level Driver Training with a registered provider and have it posted to the federal registry</li>
+            <li>Hold a valid Texas driver license and be at least 18 (21 for interstate or hazmat)</li>
+            <li>Carry a valid DOT medical examiner&rsquo;s certificate</li>
+            <li>Bring proof of identity, Social Security number, and Texas residency</li>
+            <li>Pass the knowledge exams, then hold your CLP at least 14 days before the skills test</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>How to use these tests</h3>
+          <ul class="checklist">
+            <li>Start in study mode and read the explanation on every question, right or wrong</li>
+            <li>Switch to exam mode once you are scoring in the 80s</li>
+            <li>Pass each section three times in a row before you schedule with DPS</li>
+            <li>Read the handbook section listed on each card for anything you keep missing</li>
+            <li>Your best score per section is saved in this browser so you can see progress</li>
+          </ul>
+        </div>
+      </div>
+      <div class="panel" style="margin-top:16px">
+        <h3>The source material</h3>
+        <p style="margin-bottom:0">Every question on this site is written from the <b>Texas Commercial Motor Vehicle
+          Drivers Handbook</b> published by the Texas Department of Public Safety, which is the document the real exam is
+          built from. Each test card names the handbook sections it covers. Download the current handbook free from the
+          <a href="https://www.dps.texas.gov/section/driver-license/texas-commercial-motor-vehicle-drivers-handbook">Texas DPS website</a>
+          and read the sections alongside these tests &mdash; that combination is what actually gets people through on the
+          first attempt.</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="panel" style="background:var(--brand);color:#fff;border-color:transparent">
+        <h3 style="color:#fff">Getting your CDL to go to work?</h3>
+        <p style="color:#bccbd9;margin-bottom:16px;max-width:62ch">Wichita Falls Equipment keeps trucks, trailers and
+          heavy equipment working across North Texas. Studying for a Class A so you can run a truck for a living is a
+          good decision &mdash; use the tests above until the answers are automatic, then go pass it.</p>
+        <a class="btn" href="#tests">Start a practice test</a>
+      </div>
+    </div>
+
+  </div>
+</main>
+</div>
+
+<div id="view-test" hidden>
+<div class="quiz-top">
+  <div class="wrap">
+    <div class="title"><span id="quiz-title">Loading&hellip;</span><small id="quiz-sub"></small></div>
+    <span class="pill" id="quiz-pill"></span>
+  </div>
+  <div class="progress-track"><div class="progress-bar" id="progress-bar"></div></div>
+</div>
+
+<main>
+  <div class="wrap narrow">
+    <div id="quiz-root"></div>
+    <p style="font-size:.82rem;color:var(--muted);margin:28px 0 0">
+      Keyboard: press <b>A</b>&ndash;<b>D</b> or <b>1</b>&ndash;<b>4</b> to answer, <b>Enter</b> to continue.
+    </p>
+  </div>
+</main>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <strong>Wichita Falls Equipment</strong>
+        <p>Texas CDL knowledge test preparation. Free to use, no sign-up, works on any phone.</p>
+      </div>
+      <div>
+        <strong>Practice tests</strong>
+        <p id="footer-links"></p>
+      </div>
+      <div>
+        <strong>Official resources</strong>
+        <p>
+          <a href="https://www.dps.texas.gov/section/driver-license/commercial-driver-license">Texas DPS &mdash; Commercial Driver License</a><br>
+          <a href="https://www.dps.texas.gov/section/driver-license/texas-commercial-motor-vehicle-drivers-handbook">Texas CMV Drivers Handbook</a><br>
+          <a href="https://www.fmcsa.dot.gov/registration/commercial-drivers-license">FMCSA &mdash; CDL requirements</a>
+        </p>
+      </div>
+    </div>
+    <div class="disclaimer">
+      This is an independent study aid. It is not affiliated with, endorsed by, or connected to the Texas Department of
+      Public Safety or any government agency, and it is not a substitute for the Texas Commercial Motor Vehicle Drivers
+      Handbook. Questions here are original, written from the handbook and federal motor carrier safety regulations;
+      they are not the questions on the state exam. Rules and fees change &mdash; verify current requirements with Texas DPS
+      before testing.
+    </div>
+  </div>
+</footer>
+
+<script>
+
+window.CDL_ROUTER = true;
+window.CDL_ROUTING = {
+  homeUrl: '#/',
+  testUrl: function (id, mode) { return '#/t/' + id + '/' + mode; },
+  param: function (name) {
+    var m = /^#\/t\/([^/]+)\/([^/]+)/.exec(window.location.hash || '');
+    if (!m) return '';
+    if (name === 't') return decodeURIComponent(m[1]);
+    if (name === 'mode') return decodeURIComponent(m[2]);
+    return '';
+  },
+  setMode: function (id, mode) {
+    suppress = true;
+    window.location.hash = '#/t/' + id + '/' + mode;
+  }
+};
+var suppress = false;
+
+/* Texas CDL practice test sections.
+ * draw  = number of questions pulled for one test attempt
+ * pass  = number of correct answers needed (Texas requires 80% on every knowledge exam)
+ * time  = suggested time limit in minutes for exam mode
+ */
+window.CDL_SECTIONS = [
+  {
+    id: 'general-knowledge',
+    name: 'General Knowledge',
+    code: 'Required',
+    tier: 'core',
+    draw: 50, pass: 40, time: 60,
+    blurb: 'Vehicle inspection, basic control, space and speed management, hazard perception, emergencies, cargo, and driver rules.',
+    who: 'Every applicant — Class A, B and C. You cannot get any CDL without passing this exam.',
+    manual: 'Sections 1, 2, 3 and 5 of the Texas Commercial Motor Vehicle Drivers Handbook.'
+  },
+  {
+    id: 'air-brakes',
+    name: 'Air Brakes',
+    code: 'Restriction L',
+    tier: 'core',
+    draw: 25, pass: 20, time: 30,
+    blurb: 'Air system components, governor cut-in and cut-out, low-air warning, spring brakes, leak tests and the seven-step air brake check.',
+    who: 'Anyone who will drive a vehicle with air brakes. Skip it and Texas stamps an "L" restriction on your license — no air brakes, ever.',
+    manual: 'Section 5 of the Texas Commercial Motor Vehicle Drivers Handbook.'
+  },
+  {
+    id: 'combination',
+    name: 'Combination Vehicles',
+    code: 'Class A',
+    tier: 'core',
+    draw: 20, pass: 16, time: 25,
+    blurb: 'Rollover and jackknife prevention, rearward amplification, coupling and uncoupling, fifth wheel and tractor protection valve.',
+    who: 'Every Class A applicant (tractor-trailer, truck with a heavy towed unit).',
+    manual: 'Section 6 of the Texas Commercial Motor Vehicle Drivers Handbook.'
+  },
+  {
+    id: 'doubles-triples',
+    name: 'Doubles & Triples',
+    code: 'Endorsement T',
+    tier: 'endorsement',
+    draw: 20, pass: 16, time: 25,
+    blurb: 'Converter dollies, shut-off valves, trailer order and weight, and the extra rollover risk of the rear trailer.',
+    who: 'Drivers pulling more than one trailer. Requires the T endorsement.',
+    manual: 'Section 7 of the Texas Commercial Motor Vehicle Drivers Handbook.'
+  },
+  {
+    id: 'tanker',
+    name: 'Tank Vehicles',
+    code: 'Endorsement N',
+    tier: 'endorsement',
+    draw: 20, pass: 16, time: 25,
+    blurb: 'Liquid surge, baffled and smooth bore tanks, outage, high center of gravity, and smooth braking technique.',
+    who: 'Drivers hauling liquids or gases in bulk packaging over 1,000 gallons. Requires the N endorsement.',
+    manual: 'Section 8 of the Texas Commercial Motor Vehicle Drivers Handbook.'
+  },
+  {
+    id: 'hazmat',
+    name: 'Hazardous Materials',
+    code: 'Endorsement H',
+    tier: 'endorsement',
+    draw: 30, pass: 24, time: 40,
+    blurb: 'Shipping papers, placarding tables, segregation, loading and unloading rules, parking and attendance, and emergency response.',
+    who: 'Drivers hauling placarded amounts of hazardous materials. Requires the H endorsement plus a TSA background check and fingerprints.',
+    manual: 'Section 9 of the Texas Commercial Motor Vehicle Drivers Handbook.'
+  },
+  {
+    id: 'passenger',
+    name: 'Passenger Transport',
+    code: 'Endorsement P',
+    tier: 'endorsement',
+    draw: 20, pass: 16, time: 25,
+    blurb: 'Passenger and baggage rules, prohibited hazardous materials, railroad and drawbridge stops, and handling disruptive riders.',
+    who: 'Drivers of any vehicle designed to carry 16 or more people including the driver. Requires the P endorsement.',
+    manual: 'Section 4 of the Texas Commercial Motor Vehicle Drivers Handbook.'
+  },
+  {
+    id: 'school-bus',
+    name: 'School Bus',
+    code: 'Endorsement S',
+    tier: 'endorsement',
+    draw: 20, pass: 16, time: 25,
+    blurb: 'Danger zones and mirror checks, loading and unloading procedure, railroad crossings, evacuations and post-trip sweeps.',
+    who: 'School bus drivers. Requires the S endorsement, and you must hold the P endorsement as well.',
+    manual: 'Section 10 of the Texas Commercial Motor Vehicle Drivers Handbook.'
+  },
+  {
+    id: 'pre-trip',
+    name: 'Pre-Trip Inspection',
+    code: 'Skills prep',
+    tier: 'skills',
+    draw: 20, pass: 16, time: 25,
+    blurb: 'What you must find, name and check on the walk-around — the knowledge behind the pre-trip portion of the road skills exam.',
+    who: 'Every applicant. The pre-trip is scored in person, but the examiner expects you to know these items cold.',
+    manual: 'Sections 2 and 11 of the Texas Commercial Motor Vehicle Drivers Handbook.'
+  }
+];
+
+/* General Knowledge — written from the Texas Commercial Motor Vehicle Drivers Handbook. */
+window.CDL_BANK = window.CDL_BANK || {};
+window.CDL_BANK['general-knowledge'] = [
+{q:"What are the two most important things a driver can do to prevent a rollover?",a:["Keep the cargo as low as possible and go slowly around turns","Inflate the tires above the rated pressure and brake hard in curves","Load the heaviest cargo over the rear axles and use the trailer hand valve","Drive with the trailer doors open and keep the fifth wheel forward"],c:0,e:"More than half of truck-driver deaths in crashes come from rollovers. A low center of gravity and slow, gradual turns are what keep the vehicle upright."},
+{q:"How much space should you keep in front of you when driving below 40 mph?",a:["One second for every 10 feet of vehicle length","Two seconds no matter how long the vehicle is","Three seconds for every 10 feet of vehicle length","One car length for every 10 mph of speed"],c:0,e:"Below 40 mph, allow one second per 10 feet of vehicle length. Above 40 mph, add one more second."},
+{q:"At 55 mph on dry pavement, what is the approximate total stopping distance for a heavy vehicle?",a:["About 60 feet","About 150 feet","About 300 feet, longer than a football field","About 1,000 feet"],c:2,e:"Perception distance (about 60 ft) plus reaction distance (about 60 ft) plus braking distance (about 170 ft) adds up to roughly 300 feet — more than the length of a football field."},
+{q:"If you double your speed, what happens to your braking distance?",a:["It stays the same","It doubles","It is about four times longer","It is about half as long"],c:2,e:"Braking distance grows with the square of speed. Doubling speed roughly quadruples the distance needed to stop."},
+{q:"How far ahead should you be looking while driving?",a:["Just past the hood of the truck","12 to 15 seconds ahead","3 to 4 seconds ahead","Only as far as your headlights reach at all times"],c:1,e:"Look 12 to 15 seconds ahead — roughly one block in the city and a quarter of a mile at highway speed."},
+{q:"How often should you check your mirrors while driving?",a:["Only when changing lanes","Regularly, about every 5 to 8 seconds","Once every mile","Only during the pre-trip inspection"],c:1,e:"Scan your mirrors regularly — roughly every 5 to 8 seconds — and always before and during a lane change."},
+{q:"What is the minimum tread depth required on the front steering tires of a commercial vehicle?",a:["2/32 of an inch","4/32 of an inch","6/32 of an inch","1/8 of an inch"],c:1,e:"Steering axle tires need at least 4/32 inch of tread in every major groove. All other tires need at least 2/32 inch."},
+{q:"What is the only correct way to check tire air pressure?",a:["Kick the tire","Thump the tire with a bar or hammer","Use a tire pressure gauge","Look at the sidewall bulge"],c:2,e:"Thumping or kicking a tire tells you nothing useful. Use a gauge, and check pressure when the tires are cool."},
+{q:"You are driving on a wet road. How should you adjust your speed?",a:["Maintain the posted speed limit","Reduce your speed by about one-third","Reduce your speed by one-half","Reduce your speed to a crawl"],c:1,e:"Cut speed by about one-third on wet pavement, by about one-half on packed snow, and much more on ice."},
+{q:"When may hydroplaning occur?",a:["Only at speeds above 60 mph","Only when it is raining hard","At speeds as low as 30 mph when there is water on the road","Only on vehicles with worn brakes"],c:2,e:"Hydroplaning can begin around 30 mph with enough water, and low tread depth or low tire pressure makes it far more likely."},
+{q:"What should you do if you find yourself hydroplaning?",a:["Brake hard and steer sharply","Release the accelerator and push in the clutch","Accelerate to regain traction","Apply the trailer brakes only"],c:1,e:"Get off the accelerator, push in the clutch to let the wheels turn freely, and do not brake hard. Steer straight until the tires regain grip."},
+{q:"What is the most common cause of a drive-wheel skid?",a:["Under-inflated tires","Driving too fast for conditions, causing the drive wheels to lose traction","Turning the steering wheel too slowly","Using low beam headlights"],c:1,e:"Over-braking or over-accelerating for the available traction spins or locks the drive wheels. Speed for conditions is the root cause."},
+{q:"How do you correct a drive-wheel braking skid?",a:["Brake harder and hold the wheel straight","Stop braking, let the wheels roll, and countersteer","Accelerate hard and turn into the guardrail","Set the parking brake"],c:1,e:"Release the brake so the wheels turn again, turn the wheel in the direction you want to go, then quickly countersteer as the vehicle straightens."},
+{q:"What should you do if the vehicle ahead of you is stopped on the shoulder with hazard lights on?",a:["Speed up to pass quickly","Move into another lane if you can do so safely, and slow down","Sound the horn continuously","Stop directly behind it"],c:1,e:"Texas law requires slowing down and, when possible, moving over for stopped emergency, utility and disabled vehicles."},
+{q:"Which of these is the best way to back a trailer?",a:["Back toward the passenger side so you can use the convex mirror","Back toward the driver's side so you can see clearly","Back at a fast, steady speed to keep the trailer straight","Back without stopping once you begin"],c:1,e:"Back toward the driver's side whenever you can — you can see the trailer directly instead of relying on mirrors."},
+{q:"Before backing, what should you always do?",a:["Sound the horn twice and start immediately","Get out and walk around the vehicle to inspect the path","Ask a bystander to stand behind the vehicle","Release the trailer brakes"],c:1,e:"Get Out And Look. Walk the full path and check clearance overhead and on both sides before you move."},
+{q:"How should you make a right turn in a large vehicle?",a:["Swing wide to the left before starting the turn","Turn wide as you complete the turn, keeping the rear of the vehicle close to the curb","Turn from the left lane every time","Straddle both lanes throughout the turn"],c:1,e:"Swinging left first invites a driver to squeeze in on your right. Keep the rear close to the curb and swing wide only as you complete the turn."},
+{q:"Why should you avoid stopping on the shoulder of a highway when you don't have to?",a:["It is illegal in every state","Traffic may drift into you, and re-entering traffic from a stop is difficult","The shoulder is reserved for buses","It voids your commercial insurance"],c:1,e:"Vehicles tend to steer toward what the driver is looking at, and getting a heavy vehicle back up to speed from the shoulder takes a large gap."},
+{q:"When must you place emergency warning devices after stopping on a highway?",a:["Within 10 minutes","Within 30 minutes","Within 1 hour","Only if you will be stopped over 2 hours"],c:0,e:"Reflective triangles or other warning devices must be out within 10 minutes of stopping on a roadway or shoulder."},
+{q:"On a two-lane, two-way road, where should you place your three warning devices?",a:["All three 100 feet behind the vehicle","10 feet behind on the traffic side, 100 feet behind, and 100 feet in front","10, 50 and 500 feet behind the vehicle","One on the roof and two on the bumper"],c:1,e:"Two-way road: about 10 feet behind on the traffic side, about 100 feet behind, and about 100 feet ahead of the vehicle."},
+{q:"On a one-way or divided highway, where do the warning devices go?",a:["10, 100 and 200 feet toward approaching traffic","All three in front of the vehicle","10, 100 and 100 feet in both directions","Only one, 500 feet back"],c:0,e:"On a one-way or divided road, place them at 10, 100 and 200 feet toward approaching traffic."},
+{q:"What should you do if you are stopped on a hill or curve where drivers cannot see your vehicle?",a:["Leave the devices at 100 feet","Move the rear device back 100 to 500 feet so drivers get a warning","Skip the devices and use the four-way flashers only","Park in the middle of the road"],c:1,e:"Back the rear warning device up to 100 to 500 feet so approaching traffic has time to react to the obstruction."},
+{q:"What is the proper way to use an escape ramp?",a:["Only if the brakes have completely failed and you are already out of control","As soon as you realize you cannot control your speed on the downgrade","Never — they damage the vehicle","Only when carrying hazardous materials"],c:1,e:"Use the ramp as soon as you know you have lost the ability to control speed. Damage to the vehicle is far cheaper than a runaway."},
+{q:"What is the most important thing to do before starting down a long, steep downgrade?",a:["Shift into neutral to save fuel","Select a low gear and set your speed before the descent begins","Apply the parking brake lightly","Turn off the engine brake"],c:1,e:"Gravity increases speed on a grade. Choose your gear at the top — you may not be able to downshift once you are rolling."},
+{q:"Which braking technique is recommended on a long downgrade?",a:["Steady light pressure on the brake pedal the whole way","Snub braking: brake to about 5 mph below your safe speed, release, and repeat","Pumping the brakes rapidly and continuously","Riding the clutch and coasting"],c:1,e:"The snub method lets the brakes cool between applications. Continuous light pressure overheats and fades them."},
+{q:"When approaching a curve, when should you slow down?",a:["While in the curve, using the brakes steadily","Before entering the curve, then accelerate gently through it","After you exit the curve","Only if the curve is unposted"],c:1,e:"Slow to a safe speed before the curve, then keep light, steady power through it so the vehicle stays settled."},
+{q:"Roughly how long does a tractor-trailer need to clear a railroad crossing?",a:["About 3 seconds","About 7 seconds","About 14 seconds or more","About 30 seconds"],c:2,e:"A typical tractor-trailer needs about 14 seconds; a longer or heavier combination needs 15 or more. Never start across unless you can clear it completely."},
+{q:"What should you never do while crossing railroad tracks?",a:["Look both ways","Shift gears","Keep your speed steady","Roll down the window"],c:1,e:"Shifting on the tracks risks a stall. Pick a gear that will pull you all the way across and stay in it."},
+{q:"When a vehicle must stop at a railroad crossing, where must it stop?",a:["Right on the tracks","No closer than 15 feet and no farther than 50 feet from the nearest rail","Exactly 5 feet from the rail","At least 100 feet away"],c:1,e:"Buses and placarded hazmat vehicles must stop between 15 and 50 feet from the nearest rail, then look and listen."},
+{q:"You are driving at night. When must you dim your high beams for an oncoming vehicle?",a:["Within 100 feet","Within 500 feet","Within 1,000 feet","Only if the other driver flashes you"],c:1,e:"Dim within 500 feet of an oncoming vehicle and within 300 feet when following another vehicle."},
+{q:"Why should you not use high beams in fog?",a:["They drain the battery","The light reflects off the fog and glares back at you","They are illegal in Texas","They warm the lens too much"],c:1,e:"High beams bounce off water droplets and reduce what you can see. Use low beams, and consider fog lights."},
+{q:"What is the only thing that will overcome fatigue on a long trip?",a:["Coffee and energy drinks","Loud music and cold air","Sleep","Stopping for a meal"],c:2,e:"Caffeine and fresh air are short-lived tricks. Only real sleep restores alertness."},
+{q:"What is the only thing that will reduce your blood alcohol concentration?",a:["Coffee","A cold shower","Exercise","Time"],c:3,e:"The liver processes alcohol at a fixed rate. Nothing speeds it up — only time lowers BAC."},
+{q:"What blood alcohol concentration disqualifies a CDL driver operating a commercial vehicle?",a:["0.08 or higher","0.04 or higher","0.10 or higher","Any amount above 0.00"],c:1,e:"0.04 or higher while operating a CMV is a disqualifying offense. Refusing the test carries the same consequence."},
+{q:"How long may you not operate a commercial vehicle after consuming alcohol?",a:["1 hour","2 hours","4 hours","8 hours"],c:2,e:"Federal rules prohibit driving a CMV within 4 hours of consuming alcohol, and prohibit possessing it in the vehicle."},
+{q:"What emergency equipment must be on board a commercial vehicle?",a:["A fire extinguisher, spare electrical fuses, and warning devices for parked vehicles","A first aid kit and a flare gun only","A spare tire and jack","A tow strap and jumper cables"],c:0,e:"A properly charged and rated fire extinguisher, spare fuses (unless the vehicle uses circuit breakers), and three warning devices are required."},
+{q:"How should you use a fire extinguisher on a vehicle fire?",a:["Aim at the top of the flames from 3 feet away","Stand upwind, 6 to 10 feet back, and aim at the base of the fire","Spray in a circle around the fire","Open the hood fully before spraying"],c:1,e:"Stay upwind so smoke and chemicals blow away from you, keep your distance, and sweep at the base of the flames."},
+{q:"Which type of fire should never be fought with water?",a:["A cargo fire in paper products","An electrical or gasoline fire","A tire fire","A trash fire in the cab"],c:1,e:"Water spreads burning fuel and conducts electricity. Use a B:C rated extinguisher on electrical and flammable liquid fires."},
+{q:"What should you do if a tire blows out while driving?",a:["Brake hard immediately","Hold the steering wheel firmly, stay off the brake, and slow gradually","Steer sharply onto the shoulder","Accelerate to regain control"],c:1,e:"A hard grip keeps the vehicle straight. Let it slow on its own, then brake gently once you have it under control and move off the road."},
+{q:"How should you brake if your vehicle is not equipped with antilock brakes and you must stop quickly?",a:["Lock the brakes and hold them","Use controlled or stab braking so the wheels keep rolling","Pump the brakes rapidly the entire distance","Use the parking brake"],c:1,e:"Locked wheels mean no steering. Controlled braking keeps the wheels just short of lockup; stab braking applies fully then releases when the wheels lock."},
+{q:"What does an antilock braking system (ABS) do?",a:["Always shortens your stopping distance","Helps you keep steering control during hard braking","Replaces the need for a service brake check","Applies the trailer brakes automatically"],c:1,e:"ABS keeps the wheels from locking so you can steer while braking hard. It does not automatically shorten stopping distance."},
+{q:"How should you brake with ABS in an emergency?",a:["Pump the brake pedal","Brake normally — press hard and hold, and steer","Apply the parking brake first","Downshift instead of braking"],c:1,e:"With ABS, press hard and hold. The system cycles the brakes for you; your job is steering."},
+{q:"When must cargo be inspected after the start of a trip?",a:["Within the first 50 miles, then every 150 miles or 3 hours","Only at the destination","Within the first 500 miles","Every 500 miles"],c:0,e:"Check securement within the first 50 miles, then at least every 150 miles or 3 hours of driving, or each time you stop for fuel or a break."},
+{q:"What is the minimum number of tiedowns required for a piece of cargo?",a:["One","Two, plus one for every additional 10 feet of cargo","Four regardless of length","One for every 20 feet"],c:1,e:"You need at least one tiedown per 10 feet of cargo, and never fewer than two."},
+{q:"The combined working load limit of your tiedowns must be at least what fraction of the cargo weight?",a:["One-quarter","One-half","Equal to the full weight","Twice the weight"],c:1,e:"The aggregate working load limit of all tiedowns must be at least half the weight of the cargo being secured."},
+{q:"What happens when cargo is loaded too high in the trailer?",a:["Fuel economy improves","The center of gravity rises and the rollover risk increases","The brakes work better","The steering axle carries less weight"],c:1,e:"A high center of gravity makes the vehicle tip more easily in curves and evasive maneuvers. Keep heavy freight low and centered."},
+{q:"What is the danger of loading cargo too far forward or too far to the rear?",a:["Nothing, as long as the total weight is legal","Too far forward overloads the steer axle; too far to the rear can make steering light and traction poor","It only affects fuel mileage","It changes the engine governor setting"],c:1,e:"Weight distribution matters as much as total weight. Poor balance costs you steering control, traction and braking."},
+{q:"What does 'gross combination weight rating' (GCWR) mean?",a:["The weight of the empty trailer","The maximum a single axle can carry","The maximum rated weight of the power unit plus the towed unit and their loads","The weight of the cargo only"],c:2,e:"GCWR is the manufacturer's maximum for the whole combination — power unit, towed unit, and everything loaded on both."},
+{q:"How much play is acceptable in the steering wheel of a vehicle with a 20-inch wheel?",a:["No more than about 2 inches","No more than 6 inches","Up to a quarter turn","Any amount, as long as it self-centers"],c:0,e:"More than about 10 degrees of play — roughly 2 inches on a 20-inch wheel — makes the vehicle hard to steer and is a defect."},
+{q:"When should the parking brake be tested?",a:["Only at annual inspection","As part of every pre-trip inspection","Once a month","Only before a downgrade"],c:1,e:"Test it every pre-trip: apply the parking brake, release the service brake, and gently pull against it in low gear to be sure it holds."},
+{q:"What does it mean when your engine's coolant temperature gauge rises above normal?",a:["The engine is running efficiently","The engine may be overheating and you should stop and investigate","The oil pressure is too high","The alternator is charging"],c:1,e:"Continuing to drive an overheating engine can destroy it. Pull over safely, and never remove a hot radiator cap."},
+{q:"What should you do if you must drive through deep standing water?",a:["Drive through at highway speed to push the water aside","Slow down, use light brake pressure afterward to dry the linings, and test the brakes","Shift to neutral and coast","Set the parking brake as you enter"],c:1,e:"Wet linings lose stopping power. After the water, apply light pressure while moving slowly to heat and dry the brakes, then test them."},
+{q:"When is the road likely to be the most slippery during a rain?",a:["After several hours of steady rain","Just as the rain begins, when water mixes with oil on the road","Only after the rain stops","Never — rain washes the road clean"],c:1,e:"The first few minutes lift oil and grease off the pavement. It is often the most slippery moment of the storm."},
+{q:"Which is a sign that the road may be icy?",a:["Ice on your mirrors, antenna or the top corners of the windshield","Steam rising from the exhaust","Warm air from the defroster","Loose gravel on the shoulder"],c:0,e:"Ice building on mirror arms, antennas and windshield corners is a reliable clue that the road surface is freezing too."},
+{q:"What is 'black ice'?",a:["A layer of gravel and tar","A thin, clear layer of ice that makes the road look merely wet","Ice mixed with road salt","Snow packed by traffic"],c:1,e:"Black ice is clear enough that the pavement shows through. If the temperature is below freezing and the road looks wet, suspect it."},
+{q:"What should you do when a vehicle is passing you?",a:["Speed up so they finish sooner","Stay in your lane and, if safe, ease off the accelerator to let them get by","Move onto the shoulder","Flash your high beams"],c:1,e:"Hold your lane and your position, and give a little room. Making them work harder to pass keeps them alongside you longer."},
+{q:"Where is the 'No-Zone' most dangerous around a large truck?",a:["Directly in front of the bumper","Along both sides and directly behind the trailer","Two lanes to the left","In the oncoming lane"],c:1,e:"The blind spots along the sides — especially the right — and directly behind the trailer hide entire vehicles from the driver."},
+{q:"You are being tailgated. What is the safest response?",a:["Speed up to open a gap","Increase the space in front of you and avoid quick moves","Flash your brake lights repeatedly","Move onto the shoulder and let them by"],c:1,e:"More space ahead gives you room to slow gradually instead of braking hard, which is what would put the tailgater into your trailer."},
+{q:"When are you required to use your four-way emergency flashers?",a:["Whenever it is raining","When your vehicle is stopped on or beside a road, or moving unusually slowly","Only when carrying hazardous materials","Only at night"],c:1,e:"Use them any time the vehicle is a hazard to traffic — stopped on the shoulder, or crawling well under the flow of traffic."},
+{q:"What does a bridge posted with a weight limit mean for a driver whose vehicle exceeds it?",a:["Cross slowly and centered","Do not cross — find another route","Cross with hazard lights on","Cross only if empty"],c:1,e:"Posted bridge limits are legal limits. If your gross weight exceeds them, you must route around."},
+{q:"What should you assume about posted overhead clearance heights?",a:["They are always accurate","They may not be accurate — repaving and snow pack can lower clearance","They include a 2-foot safety margin","They only apply to buses"],c:1,e:"Repaving raises the roadbed and snow adds inches. Never assume the sign still reflects the real clearance."},
+{q:"What is the first thing you should do at the scene of an accident you come upon?",a:["Move the injured out of the vehicles","Park away from the scene, put out warning devices, and protect the area","Take photographs for insurance","Push the wrecked vehicles off the road"],c:1,e:"Protect the area first so a second crash does not occur, then notify authorities and help the injured without moving them unless there is fire danger."},
+{q:"Which of these is grounds for disqualification of a CDL for a first offense?",a:["A parking ticket in a personal vehicle","Leaving the scene of an accident involving a commercial vehicle","Driving 5 mph over the limit","Failing to keep a fuel receipt"],c:1,e:"Leaving the scene, DUI, refusing a test, using a CMV to commit a felony and several other major offenses carry a disqualification of at least one year."},
+{q:"How long is a CDL holder disqualified for a first conviction of driving a commercial vehicle while under the influence?",a:["30 days","90 days","At least 1 year, or 3 years if carrying placarded hazardous materials","Permanently"],c:2,e:"A first major offense is a one-year disqualification; it becomes three years if the vehicle was placarded for hazardous materials."},
+{q:"What is the maximum number of hours you may drive after 10 consecutive hours off duty under the property-carrying rules?",a:["8 hours","10 hours","11 hours","14 hours"],c:2,e:"You may drive up to 11 hours, but only within a 14-hour window that starts when you come on duty."},
+{q:"Under the 14-hour rule, what does taking a meal break do to the window?",a:["It stops the clock","It does not stop the 14-hour clock","It extends the window by the length of the break","It resets the clock"],c:1,e:"Once you come on duty, the 14-hour window runs continuously. Only a qualifying off-duty period restarts it."},
+{q:"What must you do with the previous driver's vehicle inspection report?",a:["Throw it away","Review it, and sign it only if defects were noted and certified as repaired","File it without reading it","Mail it to the state"],c:1,e:"You must review the last report and, when defects were listed, confirm they were repaired or determined not to need repair — then sign."}
+];
+
+/* Air Brakes — written from Section 5 of the Texas Commercial Motor Vehicle Drivers Handbook. */
+window.CDL_BANK = window.CDL_BANK || {};
+window.CDL_BANK['air-brakes'] = [
+{q:"How many separate braking systems does an air brake vehicle have?",a:["One","Two: service and parking","Three: service, parking and emergency","Four"],c:2,e:"The service brakes stop you in normal driving, the parking brakes hold the vehicle, and the emergency brakes apply automatically if air pressure is lost."},
+{q:"What does the air compressor governor control?",a:["Engine speed","When the compressor pumps air into the tanks","The rate of brake application","Trailer brake timing"],c:1,e:"The governor cuts the compressor in and out to keep tank pressure inside its operating range."},
+{q:"At what pressure does the governor typically stop pumping air into the tanks (cut-out)?",a:["About 60 psi","About 100 psi","About 125 psi","About 150 psi"],c:2,e:"Cut-out is normally around 125 psi and cut-in around 100 psi. If the compressor keeps running past cut-out, the governor is faulty."},
+{q:"At what pressure does the governor usually start pumping again (cut-in)?",a:["About 60 psi","About 100 psi","About 125 psi","About 150 psi"],c:1,e:"Cut-in is normally about 100 psi. Pressure should build back to cut-out quickly."},
+{q:"At what pressure is the safety relief valve in the supply tank usually set?",a:["100 psi","125 psi","150 psi","200 psi"],c:2,e:"The safety valve opens at about 150 psi to protect the tank. If it releases air, something is wrong and it must be repaired."},
+{q:"At what pressure must the low air pressure warning device come on?",a:["At or below 60 psi","At or below 20 psi","At 100 psi","At 125 psi"],c:0,e:"The warning light and buzzer must activate at 60 psi or below (or one-half the governor cut-out on some older vehicles)."},
+{q:"At what pressure do spring (parking) brakes typically apply automatically on a tractor?",a:["Between 60 and 80 psi","Between 20 and 45 psi","At exactly 100 psi","At 5 psi"],c:1,e:"As air pressure drops into the 20 to 45 psi range, the springs overcome the remaining air and set the brakes."},
+{q:"How much air loss per minute is allowed on a single vehicle with the engine off and the brakes released?",a:["No more than 2 psi in one minute","No more than 4 psi in one minute","No more than 6 psi in one minute","Any amount is acceptable"],c:0,e:"Single vehicle, brakes released: 2 psi per minute. Combination vehicle, brakes released: 3 psi per minute."},
+{q:"How much air loss per minute is allowed on a combination vehicle with the brakes applied?",a:["2 psi","3 psi","4 psi","6 psi"],c:2,e:"With the brakes applied, a single vehicle may lose 3 psi per minute and a combination 4 psi per minute."},
+{q:"In a dual air system, how long should it take to build pressure from 85 to 100 psi at operating rpm?",a:["Within 45 seconds","Within 3 minutes","Within 5 minutes","There is no time standard"],c:0,e:"Air pressure should build from 85 to 100 psi within 45 seconds in a dual air system at operating rpm."},
+{q:"Why must air tanks be drained?",a:["To remove water and compressor oil that collect in them","To reduce the vehicle's weight","To reset the governor","To clean the brake linings"],c:0,e:"Compressed air carries water and oil. In cold weather, water freezes and can disable the brakes, so tanks are drained daily unless automatic drains are fitted."},
+{q:"What does an alcohol evaporator do?",a:["Cleans the fuel system","Puts alcohol into the air system to reduce the risk of ice in cold weather","Removes alcohol from the driver's breath","Cools the air compressor"],c:1,e:"It introduces alcohol vapor into the air system to help prevent ice from forming in the valves and lines."},
+{q:"What is brake lag?",a:["The time it takes to move your foot to the pedal","The extra distance traveled while air pressure travels through the lines and applies the brakes","The time until the brakes cool down","The delay before the ABS activates"],c:1,e:"Air takes time to travel and build in the chambers — roughly a half second, or about 32 additional feet at 55 mph."},
+{q:"Total stopping distance for an air brake vehicle includes which extra element that hydraulic brakes do not have?",a:["Perception distance","Reaction distance","Brake lag distance","Coasting distance"],c:2,e:"Perception + reaction + brake lag + effective braking distance is the full picture for an air brake vehicle."},
+{q:"What is the danger of repeatedly pressing and releasing (fanning) the brake pedal on a downgrade?",a:["It wears the tires unevenly","It uses up air faster than the compressor can replace it","It overheats the governor","Nothing — it is the recommended method"],c:1,e:"Fanning drains the tanks. If pressure falls far enough the spring brakes will apply and you lose control of when they set."},
+{q:"How far should a slack adjuster pushrod move when pulled by hand with the brakes released?",a:["No more than about one inch","At least three inches","No more than six inches","It should not move at all"],c:0,e:"More than about an inch of free play on a manual slack adjuster means the brakes are out of adjustment and need service."},
+{q:"When is it acceptable to use the trailer hand valve to park a combination vehicle?",a:["Any time you are stopped briefly","Only on level ground","Never — air can leak off and the trailer will roll","Only when the tractor brakes have failed"],c:2,e:"The hand valve applies air pressure that will eventually bleed off. Always park with the parking brakes."},
+{q:"What is the correct use of the trailer hand valve?",a:["Parking the trailer","Testing the trailer brakes","Stopping the vehicle in an emergency","Preventing a jackknife"],c:1,e:"It is for testing trailer brakes only. Using it to slow the combination invites a trailer skid."},
+{q:"What should you do if the low air pressure warning comes on while driving?",a:["Continue to the next service station","Stop safely as soon as possible and park while you still have air","Pump the brake pedal to build pressure","Turn off the engine and coast"],c:1,e:"Below about 45 psi the spring brakes set themselves — possibly in traffic. Get off the road while you can still control the stop."},
+{q:"How do you check that the parking brake holds?",a:["Rev the engine in neutral","With the parking brake set, release the service brake and pull gently forward in low gear","Watch the air gauge for one minute","Apply the hand valve and count to ten"],c:1,e:"A gentle tug against the set parking brake proves it will actually hold the vehicle."},
+{q:"How should the service brakes be checked before a trip?",a:["At about 5 mph, apply the brake pedal firmly and check for pulling or delay","At 30 mph with a hard stop","Only by looking at the air gauge","By listening for hissing at idle"],c:0,e:"Roll at about 5 mph and press the pedal firmly. Any pulling to one side or unusual delay means service is needed."},
+{q:"When should you avoid using the parking brake?",a:["When the vehicle is loaded","When the brakes are very hot, or wet in freezing temperatures","On level ground","After a long downgrade in summer"],c:1,e:"Hot brakes can be damaged by being clamped, and wet brakes can freeze in place. Chock the wheels and let them cool or dry instead."},
+{q:"What are spring brakes held off by during normal driving?",a:["Hydraulic pressure","Air pressure","An electric solenoid","A mechanical latch"],c:1,e:"Air pressure compresses the powerful springs. Lose the air and the springs apply the brakes."},
+{q:"What happens to the tractor protection valve if air pressure drops too low?",a:["It opens fully to supply the trailer","It closes automatically, protecting tractor air and applying the trailer emergency brakes","It vents the tractor tanks","It disables the parking brake"],c:1,e:"The tractor protection valve closes in the 20 to 45 psi range so the tractor keeps enough air to stop while the trailer brakes apply."},
+{q:"What color is the emergency air line glad hand connector, by convention?",a:["Blue","Red","Green","Black"],c:1,e:"Red is the emergency line and blue is the service line. Crossing them is a serious and dangerous mistake."},
+{q:"What does the brake drum or rotor need to be inspected for?",a:["Cracks longer than half the width of the friction area","Paint color","Tread wear","Air pressure"],c:0,e:"Cracks longer than half the friction area width, plus loose linings, contamination by oil or grease, and worn linings, are all defects."},
+{q:"Why must brake drums be free of oil and grease?",a:["It stains the wheels","Contaminated linings lose stopping power","It makes the brakes noisy","It voids the warranty"],c:1,e:"Oil, grease or brake fluid on the linings destroys friction, and the loss is unpredictable from wheel to wheel."},
+{q:"What is stab braking?",a:["Holding the pedal fully down until you stop","Applying the brakes fully, releasing when the wheels lock, and reapplying when they roll again","Lightly dragging the brakes","Pumping the brakes rapidly to build air"],c:1,e:"Stab braking is an emergency technique for vehicles without ABS. Never release for more than about a second."},
+{q:"What is the purpose of the modulating control valve?",a:["To adjust the governor","To apply the spring brakes gradually if the service brakes fail","To drain the air tanks","To control the engine fan"],c:1,e:"On vehicles that have one, the modulating valve lets you apply the spring brakes in a controlled way during a service brake failure."},
+{q:"Why do air brakes take longer to stop the vehicle than hydraulic brakes?",a:["The linings are softer","Brake lag adds time and distance before the brakes take hold","Air brakes are weaker","The pedal travel is longer"],c:1,e:"Air must travel the length of the system before the shoes press the drums, which adds roughly a half second to every application."},
+{q:"What should you do first in the seven-step air brake check?",a:["Release the parking brake","With the parking brake on and the wheels chocked, let the air build to governor cut-out","Drive at 5 mph","Fan the brakes down to 60 psi"],c:1,e:"Start by letting the system charge fully, then check cut-out, static leakage, applied leakage, the warning device, the spring brake set point, and finally the parking and service brake tests."},
+{q:"During the leak-down test, what must the engine be doing?",a:["Running at high idle","Shut off, with the key in the on position for the gauges","Running in gear","At operating rpm"],c:1,e:"Turn the engine off so the compressor cannot mask a leak, then watch the gauge for the allowed rate."},
+{q:"At what pressure should you fan the brakes down to during the seven-step check to confirm the warning device?",a:["Below 60 psi","Below 100 psi","Below 20 psi","Below 10 psi"],c:0,e:"Step the pressure down and confirm the warning light and buzzer come on at 60 psi or above."},
+{q:"You continue fanning the brakes after the warning comes on. What should happen next?",a:["Nothing until 0 psi","The spring brakes should set somewhere between 20 and 45 psi","The engine should shut off","The trailer should release"],c:1,e:"The tractor protection valve closes and the parking brake knob pops out in the 20 to 45 psi range."},
+{q:"What is the danger of a leaking air line to the trailer?",a:["Nothing — the trailer has its own compressor","The trailer's emergency brakes may apply unexpectedly","The tractor loses its lights","The steering becomes heavy"],c:1,e:"A significant leak will drop trailer supply pressure and set the trailer's spring brakes, potentially at highway speed."},
+{q:"How do wet brakes affect stopping?",a:["They stop better","They may apply unevenly or not at all, causing pulling or a lack of braking","They cause the ABS to disengage","They increase air pressure"],c:1,e:"Water in the linings reduces and unbalances friction. Dry them by driving slowly with light brake pressure applied."},
+{q:"What does the yellow ABS malfunction lamp on a tractor indicate?",a:["The engine needs service","The antilock system has a fault and may not be working","The parking brake is applied","Low oil pressure"],c:1,e:"The lamp should come on briefly at startup and go out. If it stays lit, the ABS is not functioning — the normal brakes still work, but get it repaired."},
+{q:"How should you brake on a slippery road with air brakes and no ABS?",a:["Brake hard and lock the wheels","Brake early and gently, keeping the wheels rolling","Use only the trailer hand valve","Downshift instead of braking"],c:1,e:"Gentle, early braking preserves traction. Locked wheels on a slick surface mean no steering and a likely jackknife."}
+];
+
+/* Combination Vehicles — written from Section 6 of the Texas Commercial Motor Vehicle Drivers Handbook. */
+window.CDL_BANK = window.CDL_BANK || {};
+window.CDL_BANK['combination'] = [
+{q:"What causes 'rearward amplification' or the crack-the-whip effect?",a:["Braking too gently","A quick steering movement at the tractor being multiplied at the rear trailer","Loading the trailer too heavily","Low tire pressure on the steer axle"],c:1,e:"A sudden lane change can be amplified several times over by the time it reaches the rear trailer, which is how trailers get thrown into a roll."},
+{q:"Why are empty trailers harder to stop than loaded ones?",a:["They have no brakes","Less traction on lightly loaded tires means the wheels lock more easily and bounce","The air system loses pressure","The trailer brakes disconnect when empty"],c:1,e:"Brakes and suspension are designed for a load. Empty, the wheels lock sooner, stopping distance can actually increase, and a skid is more likely."},
+{q:"What is the first sign of a tractor jackknife?",a:["The steering wheel shakes","The drive wheels lose traction and the tractor begins to swing","The trailer lights flicker","The air pressure rises"],c:1,e:"Locked or spinning drive wheels let the rear of the tractor slide out. Release the brake, get the wheels rolling and countersteer."},
+{q:"Should you use the trailer hand valve to straighten out a jackknifing combination?",a:["Yes, it pulls the trailer straight","No — applying trailer brakes in a skid makes it worse","Only if the trailer is empty","Only at speeds under 20 mph"],c:1,e:"Braking the trailer during a skid keeps its wheels locked. Release, let the wheels roll, and steer."},
+{q:"What is off-tracking?",a:["The trailer riding on the shoulder","The rear wheels following a shorter path than the front wheels in a turn","The trailer bouncing over rough pavement","Wheels turning at different speeds"],c:1,e:"The longer the vehicle, the more the rear wheels cut inside the front wheels' path — which is why you turn wide at the end of the turn, not the start."},
+{q:"When coupling, what must you do before backing under the trailer?",a:["Raise the landing gear all the way","Chock the trailer wheels or make sure the trailer brakes are locked","Connect the electrical cord only","Fold the fifth wheel plate"],c:1,e:"Secure the trailer so it cannot move, then inspect the fifth wheel and kingpin height before backing."},
+{q:"How high should the trailer be before you back under it?",a:["High enough that the tractor frame passes underneath without touching","Low enough that the kingpin drags on the fifth wheel","Level with the tractor frame rails","As high as the landing gear will go"],c:0,e:"The trailer should be low enough that it is raised slightly when the tractor backs under, and high enough that the frame does not strike it."},
+{q:"What is the correct way to test that the coupling is locked?",a:["Look at the fifth wheel from the cab","Lock the trailer brakes and gently pull forward against them","Rock the trailer with the landing gear down","Sound the horn and watch the trailer"],c:1,e:"The tug test proves the jaws are closed. Then get out and inspect the connection visually with a flashlight."},
+{q:"What should you see when you inspect the fifth wheel coupling from underneath?",a:["A gap between the upper and lower fifth wheel plates","No space between the upper and lower fifth wheel, with the jaws closed around the shank of the kingpin","The jaws closed around the head of the kingpin","The locking lever in the open position"],c:1,e:"Any gap means the kingpin may be resting on top of the jaws — a coupling that can come apart. The jaws must close on the shank, not the head."},
+{q:"After coupling, what must be done with the landing gear?",a:["Leave it just off the ground","Raise it fully and secure the crank handle","Lower it halfway for support","Remove it"],c:1,e:"Fully raised and secured. Landing gear left partly down will catch on railroad crossings and driveways."},
+{q:"What is the correct order for connecting the air lines?",a:["Connect the service line first, then the emergency line","Check the seals, connect the emergency (red) and service (blue) lines to the correct glad hands","Connect either one to either glad hand","Connect the electrical cord first, then both air lines together"],c:1,e:"Check the rubber seals, then connect red to emergency and blue to service. Crossed lines mean no trailer brakes when you need them."},
+{q:"What happens if you cross the air lines when coupling an older trailer?",a:["The trailer brakes will not work when you press the brake pedal","The trailer lights will fail","The tractor will not build air","Nothing at all"],c:0,e:"Crossed lines can supply air to the service line and leave you with no trailer brakes — you may not discover it until you need to stop."},
+{q:"How do you test the trailer emergency brakes?",a:["Charge the trailer air, pull out the trailer air supply knob, then gently pull forward","Apply the hand valve at 40 mph","Watch the air gauge for 3 minutes","Set the tractor parking brake only"],c:0,e:"Pulling the red trailer supply knob applies the trailer emergency brakes. A gentle tug confirms they hold."},
+{q:"How do you test the trailer service brakes?",a:["Release all brakes, move forward slowly, and apply the trailer hand valve","Apply the tractor parking brake","Use the throttle","Look at the brake chambers"],c:0,e:"At walking speed, apply the hand valve. You should feel the combination slow down."},
+{q:"What must you check on the trailer air tank before a trip?",a:["That it is full of water","That it has been drained of water and oil","That it is painted","That it is disconnected"],c:1,e:"Drain trailer tanks like tractor tanks. Water in the trailer system freezes just as readily."},
+{q:"Which of these is the correct sequence when uncoupling?",a:["Raise the landing gear, then pull the tractor away","Lower the landing gear until it makes firm contact, then disconnect the lines and pull out slowly","Disconnect the air lines before lowering the landing gear","Pull forward first, then lower the landing gear"],c:1,e:"Lower the landing gear to firm contact — do not lift the trailer — then secure the lines, release the fifth wheel latch and ease forward."},
+{q:"Why should you not raise the trailer off the fifth wheel with the landing gear when uncoupling?",a:["It wastes time","It can damage the landing gear and make re-coupling dangerous","It drains the air system","It is illegal in Texas"],c:1,e:"The landing gear is designed to support the trailer, not to jack it. Lower it to firm contact only."},
+{q:"What must you inspect on the trailer's electrical connection?",a:["That the cord is firmly seated with the safety catch engaged and not dragging","That the cord is loosely attached","Only that the lights work","Nothing — it is self-checking"],c:0,e:"A cord that drags will chafe through and kill your trailer lights, usually at night."},
+{q:"Where should the heaviest cargo be positioned in a combination vehicle?",a:["At the very rear of the trailer","Distributed so weight is properly balanced over the axles and kept as low as possible","All the way forward against the nose","Directly over the fifth wheel only"],c:1,e:"Balance across the axles keeps you legal on weight and keeps the steering, traction and braking predictable."},
+{q:"How do you avoid a trailer skid caused by sudden steering?",a:["Steer smoothly, look far ahead, and change lanes gradually","Grip the wheel tightly and steer quickly","Brake hard while turning","Use the hand valve while steering"],c:0,e:"Rearward amplification punishes sudden inputs. Early, gradual steering keeps the trailer settled."},
+{q:"What should you do if the trailer starts to swing out in a turn?",a:["Brake hard","Ease off the accelerator, steer to straighten, and give the trailer room","Apply the trailer hand valve","Accelerate through it"],c:1,e:"Reduce power gently and steer to bring the tractor back in line with the trailer."},
+{q:"What does the tractor protection valve do?",a:["Protects the engine from overheating","Keeps air in the tractor system if the trailer breaks away or a bad leak occurs","Regulates trailer lighting","Adjusts the fifth wheel"],c:1,e:"It closes automatically at low pressure so the tractor retains enough air to stop itself."},
+{q:"What does the red trailer air supply knob do?",a:["Applies the tractor parking brake only","Supplies air to the trailer and, when pulled out, applies the trailer emergency brakes","Turns on the trailer lights","Releases the fifth wheel"],c:1,e:"Push it in to charge the trailer, pull it out to set the trailer's spring brakes."},
+{q:"When must the trailer air supply knob pop out automatically?",a:["At 60 psi","Between 20 and 45 psi","At 100 psi","Never — it is manual only"],c:1,e:"As pressure falls into that range, the valve closes and the knob pops out, setting the trailer brakes."},
+{q:"What should you check on the fifth wheel mounting before a trip?",a:["That the mounting bolts and brackets are tight and none are missing","That it is greased on top only","That it rotates freely in all directions","That it slides while driving"],c:0,e:"Look for loose or missing bolts, cracks in the mounting, and correct sliding fifth wheel lock engagement."},
+{q:"On a sliding fifth wheel, what must be true before driving?",a:["The locking pins are fully engaged and the release handle is locked","The pins are partially engaged","The handle is in the release position","The plate is greased with the pins out"],c:0,e:"Unlocked pins let the fifth wheel move under braking, which can shift weight violently or separate the coupling."},
+{q:"What is the proper following distance for a 60-foot combination at 55 mph?",a:["3 seconds","At least 7 seconds","10 seconds","1 second"],c:1,e:"Six seconds for 60 feet of length, plus one more second for speeds above 40 mph — so at least 7."},
+{q:"When backing a trailer, which way do you turn the steering wheel to make the trailer go left?",a:["Turn the wheel left","Turn the wheel right, then follow the trailer","Hold the wheel straight and use the mirrors","Turn the wheel a full turn left and hold"],c:1,e:"In reverse the trailer moves opposite the steering input at first. Turn right for the trailer to go left, then follow it to straighten."},
+{q:"What is the safest response to a trailer that begins to slide sideways on ice?",a:["Brake hard immediately","Release the brakes to regain traction and steer to line the vehicle back up","Apply the parking brake","Turn the wheel sharply toward the skid and hold it"],c:1,e:"Let the wheels roll so they can grip, and steer to bring the trailer back behind the tractor."},
+{q:"Why should you release the brakes when a trailer skid begins?",a:["To save air","Because locked wheels cannot grip and the trailer will keep sliding","To keep the engine running","To activate the ABS"],c:1,e:"Rolling wheels have far more lateral grip than sliding ones. Releasing is what lets the trailer track again."}
+];
+
+/* Doubles & Triples (T endorsement) — Section 7 of the Texas CMV Drivers Handbook. */
+window.CDL_BANK = window.CDL_BANK || {};
+window.CDL_BANK['doubles-triples'] = [
+{q:"Which trailer position is most likely to turn over in a double or triple combination?",a:["The first trailer","The last trailer","The converter dolly","They are all equally stable"],c:1,e:"Crack-the-whip is strongest at the rear. The last trailer can be flung with several times the force applied at the tractor."},
+{q:"Where should the heaviest trailer be placed in a set of doubles?",a:["Directly behind the tractor","At the rear of the combination","It does not matter","On the dolly"],c:0,e:"Heaviest first, lightest last. Putting a light trailer in front of a heavy one makes the combination unstable."},
+{q:"Why do doubles and triples require more following distance?",a:["Their brakes are weaker by law","They are longer, heavier and take more room and time to stop","They are not allowed to use engine brakes","The trailers have no brakes"],c:1,e:"More length and weight means more stopping distance and a much larger gap needed to change lanes or merge."},
+{q:"What is a converter dolly?",a:["A hand truck for freight","A coupling device with a fifth wheel used to connect a second or third trailer","A type of landing gear","A brake adjustment tool"],c:1,e:"A dolly is a small axle assembly with a drawbar and fifth wheel that turns a semitrailer into a full trailer."},
+{q:"How should you secure a converter dolly before coupling it?",a:["Release its brakes and let it roll","Chock the wheels or apply its parking brake so it cannot move","Lift it with the landing gear","Leave the drawbar unlatched"],c:1,e:"An unsecured dolly rolls when you back into it. Secure it, and line up the tractor and trailer before backing."},
+{q:"When coupling a second trailer, when do you charge the trailer air system?",a:["Before backing under the second trailer","Only after everything is connected and the lines are secured","Never — the dolly supplies air","Only when the engine is off"],c:1,e:"Connect and secure the lines first, then charge the system and check that the air is reaching the rear trailer."},
+{q:"What must be true of the shut-off (cut-off) valves at the rear of the last trailer?",a:["They must be open","They must be closed","They must be removed","They must be halfway open"],c:1,e:"The rear valves on the last trailer must be closed; the valves on trailers ahead of it must be open so air reaches everything behind them."},
+{q:"How do you check that air actually reaches the rear trailer of a set?",a:["Look at the tractor gauge only","Open the emergency line shut-off at the rear of the last trailer and listen for air pressure","Press the brake pedal and watch the lights","Shake the dolly drawbar"],c:1,e:"Open the valve briefly at the rear — you should hear air escaping, which proves the whole system is charged."},
+{q:"What should you inspect on the converter dolly before a trip?",a:["Tires, wheels, the fifth wheel, safety chains, air lines and the dolly's own air tank drain","Only the tires","Only the safety chains","Nothing — the dolly is inspected annually"],c:0,e:"Check the dolly like any other unit: wheels, brakes, lights, air lines, secure safety chains and a drained air tank with the valve closed."},
+{q:"What do the safety chains on a converter dolly do?",a:["Hold the landing gear up","Keep the dolly attached if the pintle hook fails","Ground the electrical system","Support the trailer weight"],c:1,e:"The chains are a backup to the pintle hook. They must be secured with no slack dragging on the ground."},
+{q:"What must be true of the pintle hook when coupling a dolly?",a:["It must be latched and locked","It may be left open if the chains are attached","It should be greased and left unlatched","It should be removed"],c:0,e:"The pintle hook must be latched with the safety catch in place — chains alone will not hold the load."},
+{q:"How does a sudden steering movement affect a triple combination?",a:["It has almost no effect","It is amplified with each trailer, and the last trailer may roll over","Only the tractor is affected","It causes the brakes to lock"],c:1,e:"Rearward amplification multiplies with each unit. Steer gradually and plan lane changes far ahead."},
+{q:"Why should you avoid abrupt lane changes in doubles and triples?",a:["It uses more fuel","The rear trailer can be whipped sideways or rolled over","It confuses the ABS","It disconnects the dolly"],c:1,e:"The rear unit follows a wider, more violent arc than what the driver feels at the steering wheel."},
+{q:"When making a turn with doubles or triples, what must you allow for?",a:["Less off-tracking than a single trailer","More off-tracking — the rear wheels cut much farther inside your path","No difference in off-tracking","Off-tracking only in reverse"],c:1,e:"Each additional unit increases how much the rear wheels cut the corner. Swing wide at the completion of the turn."},
+{q:"What is the danger of driving doubles or triples in strong crosswinds?",a:["Nothing, because of the added weight","The lighter rear trailer can be pushed out of the lane or blown over","Only the tractor is affected","The brakes lose air"],c:1,e:"Empty or light rear trailers act like sails. Slow down and be ready for gusts at bridges and openings between buildings."},
+{q:"Where must the dolly's landing gear be before moving?",a:["Fully raised and the crank handle secured","Partially lowered for support","Removed and stowed","Left where it is"],c:0,e:"A dolly with landing gear down will catch on crossings and driveways and can be torn off."},
+{q:"How should you inspect the trailer coupling on a double before driving?",a:["Look for the fifth wheel locked around the kingpin shank with no gap, and the release handle in the locked position","Tap the trailer with your hand","Check only the air lines","Check only the lights"],c:0,e:"Every coupling in the set gets the same visual check: no gap, jaws closed on the shank, locking handle secured."},
+{q:"Why should the shut-off valve at the rear of a trailer ahead of another trailer be open?",a:["To reduce air pressure","So air can flow through to the trailers behind it","To drain water","To activate the lights"],c:1,e:"A closed intermediate valve cuts off the brakes on everything behind it — a serious and easy-to-miss defect."},
+{q:"When backing a set of doubles, what is the recommended practice?",a:["Back at speed to keep the trailers straight","Avoid backing whenever possible; if you must, use a helper and back very slowly and straight","Back with the dolly disconnected from the tractor","Back only to the right"],c:1,e:"Doubles jackknife almost instantly in reverse. Plan routes to avoid backing, and if you must, keep it short, straight and slow."},
+{q:"What extra emergency equipment concern applies to long combinations?",a:["Warning devices must be placed farther back because of the vehicle's length","No warning devices are needed","Only one triangle is required","The triangles go alongside the trailers"],c:0,e:"Measure your distances from the rear of the last trailer so drivers get the same warning they would from a shorter vehicle."},
+{q:"Under what conditions should you consider not driving a set of doubles or triples at all?",a:["Any rain","High winds, ice, or heavy snow, where the risk of a rollover or loss of control is high","At night","When the trailers are loaded"],c:1,e:"Long combinations are the first vehicles to get in trouble in wind and ice. Shutting down is often the right professional call."},
+{q:"What should you do when a set of doubles begins to sway on a windy highway?",a:["Speed up to stabilize the trailers","Slow down gradually, keep steering inputs small, and increase your following distance","Brake hard and steer to the shoulder","Apply the trailer hand valve"],c:1,e:"Reduce speed smoothly. Hard braking or sharp steering is exactly what turns sway into a rollover."},
+{q:"What must be verified about the dolly air tank?",a:["That it is full of water","That it has been drained and the drain valve is closed","That it is disconnected","That it is painted red"],c:1,e:"Drain it like any other air tank and confirm the valve is closed before charging the system."},
+{q:"Why must you check that the trailers are properly aligned before coupling a dolly?",a:["To make the load look neat","Misalignment strains the coupling and can prevent the fifth wheel from locking","To satisfy the weight limits","It is not necessary"],c:1,e:"Line everything up straight so the kingpin enters the jaws squarely and locks completely."}
+];
+
+/* Tank Vehicles (N endorsement) — Section 8 of the Texas CMV Drivers Handbook. */
+window.CDL_BANK = window.CDL_BANK || {};
+window.CDL_BANK['tanker'] = [
+{q:"When is a tank endorsement required?",a:["Any time you drive a truck","When hauling liquids or gases in bulk packaging with a rated capacity over 1,000 gallons","Only when hauling hazardous materials","Only for trailers over 40 feet"],c:1,e:"The N endorsement applies to liquids or gases in a tank or tanks with an individual rated capacity over 119 gallons and an aggregate over 1,000 gallons."},
+{q:"Why do tank vehicles have a high risk of rollover?",a:["They have weak brakes","A high center of gravity and moving liquid load","They are longer than other trailers","They cannot use ABS"],c:1,e:"Liquid rides high in the tank and shifts as you turn. Tankers roll at speeds that would be safe in a dry van."},
+{q:"What is liquid surge?",a:["Foam forming on top of the liquid","The wave of liquid moving back and forth inside a partially filled tank","Pressure building in the vapor space","A leak at the discharge valve"],c:1,e:"Surge can push the vehicle in the direction the wave is travelling — most dangerously just as you come to a stop."},
+{q:"What is the greatest danger from front-to-back surge?",a:["It can shove the vehicle forward after you have stopped, into an intersection","It empties the tank","It damages the brakes","It causes the tank to freeze"],c:0,e:"You stop, the wave arrives, and the vehicle is pushed forward. Leave extra room and brake early and gently."},
+{q:"What do baffles inside a tank do?",a:["Prevent side-to-side surge","Reduce front-to-back surge","Increase the tank's capacity","Keep the liquid cold"],c:1,e:"Baffled tanks have bulkheads with holes that slow forward and backward movement — but they do nothing for side-to-side surge."},
+{q:"Why do tanks that haul food products often have no baffles?",a:["Baffles make the tank heavier","Sanitation regulations — baffles are hard to clean","Food liquids do not surge","Baffles are illegal in Texas"],c:1,e:"Smooth bore tanks are used for food-grade loads so they can be cleaned properly, which means the full force of the surge is present."},
+{q:"How should you drive a smooth bore tank?",a:["Exactly like a dry van","With extra caution — start slowly, brake well ahead, and avoid sudden moves","At higher speeds to reduce surge","With the tank completely empty"],c:1,e:"With nothing to slow the wave, everything you do must be smooth and planned far in advance."},
+{q:"What is outage?",a:["The amount a tank leaks per hour","The space left in a tank so the liquid can expand","The time a tank is out of service","The weight of the empty tank"],c:1,e:"Liquids expand as they warm. You must leave room, and how much depends on the product and the expected temperature change."},
+{q:"Why might a tank not be filled to capacity even when there is room?",a:["To make cleaning easier","Because the weight of a dense liquid would exceed legal axle or gross weight limits","To reduce surge to zero","To keep the vapor space cold"],c:1,e:"Some liquids are heavy enough that a full tank would be overweight long before it is physically full."},
+{q:"How should you take a curve in a tank vehicle?",a:["At the posted speed, which is safe for all vehicles","Slow well below the posted speed before entering, then accelerate gently","Brake through the curve","Accelerate into the curve"],c:1,e:"Posted curve speeds are set for cars. A loaded tanker often needs to be substantially slower."},
+{q:"What is the correct braking technique in a tank vehicle?",a:["Brake late and hard","Brake early and gently, increasing pressure smoothly and easing off before the stop","Pump the brakes","Use only the trailer hand valve"],c:1,e:"Smooth, early braking keeps the surge under control and reduces the chance of being pushed after you stop."},
+{q:"What should you do about the extra stopping distance a tanker needs?",a:["Nothing — tankers stop like other trucks","Increase following distance well beyond the normal rule and look far ahead","Follow closer to reduce cut-ins","Rely on the engine brake alone"],c:1,e:"Add space. High center of gravity, surge and weight all conspire to make a tanker's stops longer and less stable."},
+{q:"What must you inspect on a tank vehicle that other vehicles do not have?",a:["Manhole covers, vents, valves, hoses and the leak-free condition of all fittings","Only the tires","Only the fifth wheel","Only the lights"],c:0,e:"Check the shell for dents and leaks, verify manhole covers and vents are closed and sealed, and confirm the discharge valves and caps are secured."},
+{q:"Why must you check that the vents on a tank are not blocked?",a:["Blocked vents let dirt in","A blocked vent can cause the tank to collapse or pressurize dangerously during loading or unloading","Vents affect the fuel mileage","Vents are only decorative"],c:1,e:"Tanks need to breathe. A plugged vent can rupture the shell or pull it in as the load is discharged."},
+{q:"What special hazard does a partially loaded tank pose compared with a full one?",a:["None","The liquid has room to move, producing strong surge","It is heavier","The brakes fade faster"],c:1,e:"A partial load is the surge-prone load. A tank that is full or nearly empty moves far less."},
+{q:"How does surge affect a tanker on a slippery road?",a:["It has no effect","It can push the vehicle sideways or forward on a surface with little traction","It improves traction","It locks the brakes"],c:1,e:"On ice, the surge can move the vehicle even when the wheels are stopped. Slow down long before you need to."},
+{q:"What should you do before loading or unloading a cargo tank containing hazardous materials?",a:["Leave the vehicle to check the paperwork inside","Stay within 25 feet of the vehicle with an unobstructed view, and remain alert","Shut off the lights and leave","Disconnect the trailer"],c:1,e:"A qualified person must attend the operation — awake, alert, within 25 feet and with a clear view of the tank."},
+{q:"Where should the engine be during loading or unloading of a flammable liquid tank?",a:["Running at high idle","Shut off, unless it is needed to run a pump","Idling with the parking brake off","Running with the doors open"],c:1,e:"Turn the engine off unless it drives the transfer pump, and bond and ground the tank as required."},
+{q:"Why should you keep the tank's discharge valves closed and capped while driving?",a:["To meet weight limits","To prevent a leak or spill of the product","To reduce surge","To improve aerodynamics"],c:1,e:"A vibrating valve that opens on the road dumps product on the highway. Caps and valve locks are checked every pre-trip."},
+{q:"Which of these describes safe speed on an on-ramp or off-ramp in a tanker?",a:["Ramp speeds are designed for all vehicles","Ramp posted speeds are often too fast for a loaded tank — slow further","Ramps are safest at the posted speed plus 5 mph","Ramp speeds only matter when empty"],c:1,e:"Ramps are a classic tanker rollover location. Enter slow and steady rather than braking on the curve."},
+{q:"What effect does a bulkhead-divided tank have on weight distribution?",a:["No effect","Loading only some compartments can put too much weight on one axle","It eliminates surge entirely","It makes the tank lighter"],c:1,e:"You must load compartments so the weight stays balanced across the axles and within legal limits."},
+{q:"What should you do if you have to make a sudden lane change in a tanker?",a:["Steer sharply and correct back quickly","Avoid it if possible; if you must, use the smoothest steering the situation allows","Brake hard first, then steer","Accelerate hard through the maneuver"],c:1,e:"A quick swerve followed by a correction is the classic tanker rollover sequence. Look far ahead so you never need one."},
+{q:"How does surge affect stopping at a downhill traffic light?",a:["It shortens the stop","It can push the vehicle into the intersection after the wheels have stopped","It has no effect on grades","It applies the parking brake"],c:1,e:"Gravity plus surge is the worst combination. Stop farther back than you think you need to."},
+{q:"When may you need to check the tank's emergency shut-off systems?",a:["Never","During the pre-trip inspection, verifying that remote shut-off controls are present and functional","Only after an accident","Only at annual inspection"],c:1,e:"Cargo tanks in hazardous service have emergency discharge controls; confirm they are in place and operable before the trip."}
+];
+
+/* Hazardous Materials (H endorsement) — Section 9 of the Texas CMV Drivers Handbook. */
+window.CDL_BANK = window.CDL_BANK || {};
+window.CDL_BANK['hazmat'] = [
+{q:"What is required in addition to the written test to obtain a hazardous materials endorsement?",a:["A physical exam only","A TSA security threat assessment including fingerprinting","A road test in a tanker","Two years of driving experience"],c:1,e:"Federal law requires a TSA background check with fingerprints before the H endorsement can be issued or renewed."},
+{q:"Where must shipping papers be kept while you are driving?",a:["In the sleeper berth","Within your reach while restrained by the seat belt, and readily visible to anyone entering the cab","Locked in the trailer with the freight","Mailed ahead to the consignee"],c:1,e:"They must be in a pouch on the driver's door or in clear view within reach — an emergency responder has to find them fast."},
+{q:"Where must shipping papers be when you are not in the vehicle?",a:["In your pocket","In the driver's door pouch or on the driver's seat","In the trailer","With the dispatcher"],c:1,e:"Leaving the cab, the papers go in the door pouch or on the seat so responders can locate them."},
+{q:"In what order must a hazardous material be described on a shipping paper?",a:["Hazard class, then name, then identification number","Identification number, proper shipping name, hazard class, packing group","Packing group, then quantity, then name","Any order is acceptable"],c:1,e:"The basic description is identification number, proper shipping name, hazard class or division, and packing group, in that sequence."},
+{q:"What does the letters 'RQ' on a shipping paper mean?",a:["Required quantity","Reportable quantity — a spill of this amount must be reported","Restricted quantity","Radioactive quantity"],c:1,e:"RQ marks a material whose release at or above the listed amount must be reported to the National Response Center."},
+{q:"How many placards must a placarded vehicle display?",a:["One, on the rear","Two, front and rear","Four — one on each side and one on each end","Six"],c:2,e:"Placards go on all four sides of the vehicle so the hazard can be identified from any approach."},
+{q:"How much of a Table 1 hazardous material requires placards?",a:["Any amount","1,001 pounds or more","5,000 pounds or more","Only bulk shipments"],c:0,e:"Table 1 materials — such as explosives 1.1, 1.2 and 1.3, poison gas, dangerous when wet, and poison inhalation hazards — require placards in any quantity."},
+{q:"How much of a Table 2 hazardous material requires placards?",a:["Any amount","1,001 pounds or more of the combined weight of all Table 2 materials","10,000 pounds or more","Only when in a tank"],c:1,e:"Table 2 materials require placards when the aggregate gross weight of all such materials on the vehicle is 1,001 pounds or more."},
+{q:"What must you do before transporting a package of hazardous materials?",a:["Open every package and inspect the contents","Check that packages are properly marked, labeled and not leaking or damaged","Remove all labels","Weigh each package individually"],c:1,e:"You must refuse leaking or improperly prepared packages — carrying them makes you responsible for the release."},
+{q:"How close may you smoke to a vehicle carrying explosives, oxidizers or flammables?",a:["No closer than 25 feet","No closer than 5 feet","No closer than 100 feet","There is no restriction"],c:0,e:"Never smoke or carry a lighted cigarette within 25 feet of a vehicle containing Class 1, 3, 4, 5 materials or flammable gases."},
+{q:"What is the minimum fire extinguisher rating required on a placarded vehicle?",a:["A UL rating of 5 B:C","A UL rating of 10 B:C or more","A UL rating of 2 A","Any household extinguisher"],c:1,e:"A placarded vehicle must carry an extinguisher with a UL rating of 10 B:C or more."},
+{q:"How often must you check the tires on a placarded vehicle?",a:["Only before the trip","Before the trip, and at each stop — and for cargo tanks, every 2 hours or 100 miles","Once a week","Only when the pressure light comes on"],c:1,e:"Examine tires at the start of each trip and each time you park. Cargo tank drivers must check at least every 2 hours or 100 miles."},
+{q:"What must you do if you find an overheated tire on a placarded vehicle?",a:["Continue driving to cool it","Remove the tire and place it a safe distance from the vehicle, and do not drive until the cause is fixed","Add air to the tire","Spray it with water and continue"],c:1,e:"An overheated tire next to hazardous cargo is a fire waiting to start. Remove it, separate it, and correct the cause."},
+{q:"Where may you never park a vehicle carrying Division 1.1, 1.2 or 1.3 explosives?",a:["Within 5 feet of the road","Within 300 feet of a bridge, tunnel, building or a crowd of people","Within 50 feet of another truck","In any rest area"],c:1,e:"Never park such a load within 300 feet of a bridge, tunnel, dwelling, building or place where people gather, except for brief operational needs."},
+{q:"How close to the traveled part of a road may a placarded vehicle be parked?",a:["No closer than 5 feet","No closer than 25 feet","Anywhere on the shoulder","No closer than 100 feet"],c:0,e:"A placarded vehicle may never be parked within 5 feet of the traveled portion of the roadway."},
+{q:"Who may attend a parked vehicle carrying Division 1.1, 1.2 or 1.3 explosives?",a:["Anyone who is nearby","A person awake, not in the sleeper berth, within 100 feet with an unobstructed view, who knows the hazards and what to do","A police officer only","No one — it may be left unattended"],c:1,e:"The attendance rules are strict: awake, alert, within 100 feet, able to see the vehicle and able to move it if needed."},
+{q:"What must a placarded vehicle do at a railroad crossing?",a:["Slow to 15 mph and proceed","Stop between 15 and 50 feet from the nearest rail, look and listen, and cross without shifting gears","Sound the horn and cross at speed","Cross only at night"],c:1,e:"Stop in the 15-to-50-foot band, check both directions, and select a gear that will carry you across without shifting."},
+{q:"What is CHEMTREC and when would you call it?",a:["A federal weigh station system","A 24-hour emergency response information service for hazardous material incidents","The state trucking association","A cargo insurance provider"],c:1,e:"CHEMTREC (1-800-424-9300) links responders with technical information about the product involved in an incident."},
+{q:"What must a shipper of hazardous materials provide on the shipping paper for emergencies?",a:["The driver's phone number","A 24-hour emergency response telephone number","The consignee's fax number","The name of the terminal manager"],c:1,e:"An emergency response phone number that is monitored at all times while the material is in transport must appear on the paper."},
+{q:"What is the Emergency Response Guidebook used for?",a:["Route planning","Identifying hazards and initial response actions for materials in transport","Calculating axle weights","Logging hours of service"],c:1,e:"The ERG lets responders — and you — look up a material by identification number or name and find the initial isolation and protective actions."},
+{q:"May you transport hazardous materials in a package that is leaking?",a:["Yes, if it is wrapped in plastic","No, never","Yes, if the trip is under 50 miles","Yes, with the shipper's written permission"],c:1,e:"Leaking packages are refused. Never accept, load or move one."},
+{q:"What must never be loaded in the same vehicle as poisons?",a:["Machinery","Food, feed or any edible material intended for consumption","Building materials","Empty drums"],c:1,e:"Poisons must be kept away from foodstuffs entirely — contamination risk makes the combination prohibited."},
+{q:"What does the segregation and separation table on the shipping documents govern?",a:["Where the driver may sleep","Which hazardous materials may not be loaded together","How placards are arranged","How the load is weighed"],c:1,e:"Some hazard classes react violently together. The table specifies which combinations must be separated or may not be loaded on the same vehicle."},
+{q:"What is required when transporting Class 1 explosives in a cargo compartment with a heater?",a:["The heater must be running","Cargo heaters generally may not be used with Division 1.1, 1.2 or 1.3 explosives","The heater must be set to low","A second driver must be present"],c:1,e:"Cargo heaters are prohibited with these explosives — the ignition risk is unacceptable."},
+{q:"What must you do with a hazardous materials load if there is an accident and you cannot move the vehicle?",a:["Leave the scene to find a phone","Keep people away, warn others of the hazard, and contact emergency response with the shipping paper information","Attempt to transfer the load yourself","Cover the placards"],c:1,e:"Protect the area, do not attempt cleanup you are not trained for, and give responders the shipping papers and emergency contact number."},
+{q:"When must a hazardous materials vehicle's placards be removed?",a:["Never","When the vehicle no longer contains the material requiring them and has been purged or cleaned as required","Every night","Only at the terminal"],c:1,e:"Placards stay on until the hazard is gone. Removing them early — or leaving them on an empty, uncleaned tank when required — are both violations."},
+{q:"What is the driver's responsibility regarding the shipper's certification on a shipping paper?",a:["To sign it for the shipper","To confirm the shipment is properly described, marked, labeled and in proper condition for transport","To ignore it","To rewrite it if it is wrong"],c:1,e:"The shipper certifies the shipment, but the driver must refuse anything obviously improper — you share responsibility once you accept it."},
+{q:"How should hazardous materials packages be loaded?",a:["Thrown in quickly to save time","Braced so they cannot fall, shift or be damaged in transit","Stacked on their sides","Loose in the trailer"],c:1,e:"Use bracing and dunnage. A package damaged in transit becomes a release, and the driver owns the consequences."},
+{q:"May you use hooks or other tools that could damage packaging when handling hazardous materials?",a:["Yes, for heavy drums","No — never use tools that can damage the container or its closures","Only for corrosives","Only in the rain"],c:1,e:"A punctured drum is a spill. Handle with equipment that will not compromise the packaging."},
+{q:"What is the rule for transporting Division 6.1 poison or poison inhalation hazard materials in the driver's compartment?",a:["It is permitted if the packages are sealed","It is prohibited","It is allowed for short trips","It is allowed with an air purifier"],c:1,e:"Hazardous materials are never carried in the cab or sleeper. The driver's compartment is off limits."},
+{q:"What does a 'DANGEROUS' placard indicate?",a:["A single material of extreme risk","Two or more Table 2 hazard classes loaded together, in place of separate placards","An overweight load","A vehicle with no hazardous materials"],c:1,e:"DANGEROUS may replace separate Table 2 placards when a mixed load qualifies, but not when 2,205 pounds or more of one class is loaded at one place."},
+{q:"When must a driver of a placarded vehicle have a written route plan?",a:["Never","When transporting Division 1.1, 1.2 or 1.3 explosives","For any hazardous material","Only when crossing state lines"],c:1,e:"Carriers must prepare a written route plan for those explosives, and the driver must carry and follow it."},
+{q:"What is the significance of the Transport Index on a radioactive package label?",a:["It shows the weight of the package","It indicates the degree of radiation control needed, and the total on one vehicle is limited","It gives the shipping cost","It identifies the shipper"],c:1,e:"Transport Indexes are added together and the total is limited, and packages must be separated from people and undeveloped film."},
+{q:"What must you do before loading or unloading a placarded cargo tank?",a:["Leave the vehicle and go inside","Set the parking brake, chock the wheels if required, and attend the operation within 25 feet with a clear view","Disconnect the trailer","Leave the engine at high idle"],c:1,e:"Attendance is required, and the vehicle must be secured against movement throughout the transfer."},
+{q:"Which of these is the driver's responsibility, not the shipper's?",a:["Preparing the shipping paper and certifying the shipment","Refusing improper packages, placarding the vehicle when needed, and safely transporting and delivering the load","Classifying the material","Designing the packaging"],c:1,e:"Shippers package and describe; carriers and drivers verify, placard, transport safely and keep the paperwork accessible."},
+{q:"What should you do if hazardous material is leaking from your vehicle while driving?",a:["Continue to the nearest terminal","Stop, secure the area, do not drive further, and call for emergency help","Drive to a fire station","Speed up to reach the delivery point"],c:1,e:"Never drive a leaking hazardous material vehicle to find help — you spread the release along the route. Park, warn, and use the emergency number."}
+];
+
+/* Passenger Transport (P endorsement) — Section 4 of the Texas CMV Drivers Handbook. */
+window.CDL_BANK = window.CDL_BANK || {};
+window.CDL_BANK['passenger'] = [
+{q:"When is a passenger endorsement required?",a:["For any vehicle over 26,000 pounds","For a vehicle designed to transport 16 or more people including the driver","Only for interstate bus drivers","Only for school buses"],c:1,e:"The P endorsement covers vehicles designed to carry 16 or more people counting the driver."},
+{q:"Where must baggage and freight be placed on a bus?",a:["In the aisle where the driver can watch it","Secured so it does not block the aisle, the driver's view, or any exit, and cannot fall on a passenger","Stacked against the emergency exit","On the front seat"],c:1,e:"Aisles and exits must stay clear, the driver must be able to move freely, and nothing may fall on riders in a hard stop."},
+{q:"How much hazardous material may a bus carry in total?",a:["No limit","No more than 500 pounds total, and no more than 100 pounds of any one class","Up to 2,000 pounds","Only what fits in the baggage compartment"],c:1,e:"Buses are limited to 500 pounds of hazardous materials overall, with a 100-pound cap on any single class."},
+{q:"Which of these may never be carried on a bus with passengers?",a:["Small arms ammunition","Division 2.3 poison gas or Division 6.1 liquid poison","Sealed drinking water","Emergency medical supplies"],c:1,e:"Poison gas, liquid class 6 poison, tear gas, irritating materials, and most explosives are prohibited on a bus carrying riders."},
+{q:"Where must riders stand while a bus is in motion?",a:["Anywhere in the aisle","Behind the standee line — never forward of it","Beside the driver","At the front door"],c:1,e:"No rider may stand forward of the standee line, which is about two feet behind the driver's seat."},
+{q:"When must a bus stop at a railroad crossing?",a:["Only when a train is visible","At every crossing, between 15 and 50 feet from the nearest rail","Only at night","Only when carrying more than 20 passengers"],c:1,e:"Stop in the 15-to-50-foot band, open the door and window, look and listen, then cross without shifting gears."},
+{q:"At which railroad crossings is a bus not required to stop?",a:["All crossings in city limits","Streetcar crossings, industrial switching tracks, crossings marked 'Exempt' or 'Abandoned', and where a police officer or flagman directs traffic","Crossings with gates","Crossings with a signal light"],c:1,e:"Those specific exceptions are listed in the manual; otherwise the stop is mandatory."},
+{q:"What must a bus driver do at a drawbridge without a signal or attendant?",a:["Cross without stopping","Stop within 50 feet of the draw and check that the span is fully closed before proceeding","Sound the horn twice and proceed","Wait 5 minutes"],c:1,e:"Stop no closer than 50 feet and confirm the draw is down and it is safe to cross."},
+{q:"When is a bus driver not required to stop at a drawbridge?",a:["Never — the stop is always required","When a traffic light shows green, or an attendant or signal indicates it is safe to cross","When the bus is empty","When following another bus"],c:1,e:"A green light, or an attendant or traffic signal controlling the crossing, permits you to proceed without stopping."},
+{q:"What should you do with a disruptive passenger?",a:["Put them off immediately wherever the bus is","Wait until a scheduled stop or a safe, well-lit place before discharging them","Stop in the middle of the highway","Ignore the behavior entirely"],c:1,e:"You may discharge a rider who endangers others, but not somewhere that puts them in danger — use a scheduled stop or a safe, lighted location."},
+{q:"When should you announce stops to passengers?",a:["Never — passengers should watch the route","Announce stops and transfer points far enough ahead that riders can prepare to exit safely","Only at the final destination","Only when asked"],c:1,e:"Announcing ahead of time keeps riders from moving around the bus while it is braking or turning."},
+{q:"What must you check on the interior of the bus before a trip?",a:["Only the driver's seat","Seats securely fastened, handrails, floor covering, signaling devices, and emergency exits that open and close properly","Only the fare box","Nothing — the maintenance shop handles it"],c:1,e:"Passenger space is part of your pre-trip: loose seats, broken handrails, torn flooring and inoperable exits all take the bus out of service."},
+{q:"What must be true of emergency exits on a bus?",a:["They may be blocked if there is enough seating","They must be unobstructed and have any required warning device working","They may be locked for security","They are only checked annually"],c:1,e:"Emergency exits must be clear and functional, and the exit alarm or signal must work."},
+{q:"When may you refuel a bus with passengers on board?",a:["Any time","Only when there is no safe alternative — and never in a closed building with passengers aboard","Only at night","Only with the engine running"],c:1,e:"Avoid it when you can, and never fuel inside an enclosed building while riders are on the bus."},
+{q:"May you talk with passengers while driving?",a:["Yes, it improves customer service","No — conversation while driving is a distraction and is prohibited","Only about the route","Only with passengers in the front seat"],c:1,e:"Handle questions at stops. Driving a full bus takes all of your attention."},
+{q:"What should you do at the end of every run?",a:["Park and leave immediately","Walk the aisle and check for sleeping passengers, articles left behind, and any damage","Only check the fuel level","Lock the bus without inspecting"],c:1,e:"A post-trip sweep is standard practice — passengers do fall asleep and get left aboard."},
+{q:"How should you handle a bus that must be evacuated?",a:["Wait for emergency personnel in all cases","Move the bus to a safe position if possible, then evacuate through the safest exits away from the hazard","Have everyone exit through the driver's door only","Keep passengers in their seats regardless"],c:1,e:"Position the bus away from traffic and the hazard when you can, then use the exits that lead riders to safety."},
+{q:"What is the standee line?",a:["A line at the ticket window","A line about two feet behind the driver's seat that riders may not cross while the bus is moving","The boundary of the baggage area","A marking on the rear bumper"],c:1,e:"It protects the driver's space and keeps riders out of the front door area in a sudden stop."},
+{q:"What should you do when a passenger wants to bring an unsecured, oversized item aboard?",a:["Allow it in the aisle","Refuse it, or require it to be stowed where it cannot block an exit or injure anyone","Put it on the seat beside the driver","Strap it to the outside of the bus"],c:1,e:"Nothing may block the aisle or exits or fall on a passenger. If it cannot be secured, it does not ride in the passenger space."},
+{q:"How should you brake a loaded bus approaching a stop?",a:["Hard at the last moment","Smoothly and gradually, so standing riders are not thrown","With the parking brake","By downshifting only"],c:1,e:"Passengers do not have seat belts and may be standing. Every stop should be gentle enough that nobody loses their footing."},
+{q:"What must you do before allowing passengers to board or exit?",a:["Bring the bus to a complete stop with the parking brake set and the door properly opened","Slow to 5 mph and open the door","Stop in the traffic lane","Keep the transmission in gear with the brake off"],c:0,e:"Full stop, brake set, door under your control. Riders are most vulnerable stepping on and off."},
+{q:"How should you check the bus's emergency equipment?",a:["Verify the fire extinguisher charge, spare fuses and warning devices are present and serviceable","Only check the extinguisher annually","Emergency equipment is not required on buses","Check only if the trip is over 100 miles"],c:0,e:"A bus carries the same required emergency equipment as any commercial vehicle, and it must be accessible."},
+{q:"Where must you look for hazards while operating in an urban area with frequent stops?",a:["Straight ahead only","Mirrors and the area around the bus for pedestrians stepping out from in front of or behind the bus","Only in the mirrors","Only at the next stop"],c:1,e:"People walk out from in front of a stopped bus constantly. Check mirrors and the near zone before every pull-out."},
+{q:"What should you do if a passenger becomes ill or injured on board?",a:["Continue the route and address it at the terminal","Stop in a safe place, assess, and call for medical assistance as needed","Discharge them at the nearest corner","Continue driving faster to reach a hospital"],c:1,e:"Get the bus somewhere safe, then get help. Driving fast with a bus full of riders creates a second emergency."},
+{q:"What is the rule for the number of passengers on a bus?",a:["It is unlimited","It must not exceed the vehicle's rated seating and standing capacity","It is limited to 16","It depends on the weather"],c:1,e:"Overloading affects handling, braking and evacuation. Stay within the rated capacity."},
+{q:"What must be checked about the bus door and step area before a trip?",a:["That the door opens and closes properly and the steps are clear and non-slip","Only that the door closes","Nothing — the door is not part of the inspection","Only the door glass"],c:0,e:"Doors, steps and handrails are the passenger interface — defects there are how people get hurt."}
+];
+
+/* School Bus (S endorsement) — Section 10 of the Texas CMV Drivers Handbook. */
+window.CDL_BANK = window.CDL_BANK || {};
+window.CDL_BANK['school-bus'] = [
+{q:"What is the 'danger zone' around a school bus?",a:["The area inside the bus near the door","The area on all sides of the bus where children are in the most danger of being hit, extending roughly 10 feet out","Only the area behind the bus","The bus stop shelter"],c:1,e:"The danger zone extends about 10 feet from the front, sides and rear — and it is largest and most deadly directly in front of the bus."},
+{q:"Which mirrors are used to see children in the danger zone directly in front of the bus?",a:["The flat rearview mirrors","The crossover mirrors","The interior mirror","The side convex mirrors only"],c:1,e:"Crossover mirrors show the front bumper area and the sides where a child could be hidden below the windshield line."},
+{q:"How far ahead of a student's stop should the amber warning lights be activated?",a:["About 25 feet","At least 100 to 300 feet, depending on speed limits","Right at the stop","After the door opens"],c:1,e:"Activate the amber lights well ahead — commonly 100 to 300 feet — so following traffic has time to slow and stop."},
+{q:"How far in front of the bus should students walk when crossing?",a:["At least 10 feet, where the driver can see them","Directly against the bumper","5 feet","Behind the bus"],c:0,e:"Students should walk at least 10 feet in front — far enough forward that the driver can see them over the hood."},
+{q:"What should you do before moving the bus after a stop?",a:["Move immediately once the door closes","Count the students, check all mirrors and the danger zones, and confirm everyone is clear and accounted for","Sound the horn and go","Wait for the students to signal"],c:1,e:"Count them off the bus and locate every one of them before you release the brake. Children who drop something and return to the bus are the classic fatality."},
+{q:"What should you do if you cannot account for a student who just got off the bus?",a:["Continue the route and report it later","Secure the bus, set the parking brake, and get out to look — do not move until the student is located","Honk and wait 30 seconds","Ask another student to look"],c:1,e:"A missing student may be in the danger zone where you cannot see them. Never move until you have found them."},
+{q:"What is 'tail swing' on a school bus?",a:["The sway of the rear when braking","The rear of the bus swinging out into an adjacent lane or object during a turn, up to about 3 feet","The bounce of the rear suspension","The movement of the rear emergency door"],c:1,e:"Because the rear overhangs the drive axle, the tail swings out. Check your mirrors for vehicles and objects before turning out of a stop."},
+{q:"What must a school bus do at every railroad crossing?",a:["Slow down and proceed if clear","Stop between 15 and 50 feet from the nearest rail, open the door and window, look and listen","Stop only if a train is coming","Cross at increased speed"],c:1,e:"Stop, silence the bus, open the service door and driver's window, look both ways, listen, then cross in a gear you will not have to change."},
+{q:"What should you do with the radio, fans and students before crossing railroad tracks?",a:["Leave everything as it is","Turn off the radio and fans and have students stop talking so you can listen for a train","Raise the volume so students stay in their seats","Open the rear door"],c:1,e:"You need to hear. Silence in the bus is part of the required crossing procedure."},
+{q:"When may a school bus back up on school property?",a:["Whenever it is convenient","Only when there is no alternative, and preferably with a responsible adult posted to watch behind","Only during morning routes","Any time the yard is empty"],c:1,e:"Backing in a school yard is the highest-risk maneuver a bus driver makes. Avoid it, and use a spotter when you cannot."},
+{q:"What must you do during the post-trip inspection of a school bus?",a:["Only check the fuel level","Walk the full length of the aisle checking for sleeping children, articles left behind, and damage or vandalism","Lock the door and leave","Check only the driver's area"],c:1,e:"Every run ends with a walk to the back of the bus. Children fall asleep and are left behind — the sweep prevents it."},
+{q:"When should a school bus be evacuated?",a:["Any time it breaks down","When the bus is on fire or near a fire, stopped in the path of a train, in an unsafe position, or when a hazardous material spill threatens the bus","Only when the engine will not start","Only on the instruction of a supervisor"],c:1,e:"Fire, rail exposure, an unsafe position, and hazardous material exposure are the situations requiring immediate evacuation."},
+{q:"What is generally the safest choice when a bus breaks down on a roadway but is not in immediate danger?",a:["Evacuate immediately in all cases","Keep students on the bus if it is in a safe position, since the bus is usually the safest place","Send students to walk to school","Have students stand beside the bus"],c:1,e:"The bus is a large, visible, protective structure. Evacuate only when staying aboard is more dangerous than getting out."},
+{q:"Where should evacuated students be taken?",a:["To the shoulder next to the bus","At least 100 feet off the road in a safe direction, away from traffic and the hazard","Into the traffic lane","Behind the bus"],c:1,e:"Move them well clear — at least 100 feet — and keep them together and away from the hazard."},
+{q:"What should you check about the flashing warning lights during the pre-trip inspection?",a:["That the amber and red lamps and the stop arm all operate properly","Only that the headlights work","Only the interior lights","Nothing — they self-test"],c:0,e:"The eight-lamp warning system and the stop arm are the bus's legal protection for loading children. All of it must work."},
+{q:"What is the correct procedure when a student drops something near the bus?",a:["Let them pick it up quickly","Tell the student to leave it and get the driver's attention first, so the driver knows where they are","Have another student retrieve it","Back up to retrieve it"],c:1,e:"Bending down beside a bus puts a child completely out of sight. The rule is: never go back for it without the driver knowing."},
+{q:"What is the danger of a student's clothing or backpack catching on the handrail?",a:["It slows loading","The student can be dragged if the bus moves before they are clear","It damages the handrail","It blocks the aisle"],c:1,e:"Drawstrings and straps catch on handrails and door mechanisms. Watch each student all the way clear of the bus."},
+{q:"How should you use the crossing control arm, if the bus is equipped with one?",a:["Deploy it with the red lights so students walk far enough in front of the bus","Leave it retracted at all times","Deploy it only in the afternoon","Use it only at railroad crossings"],c:0,e:"The crossing arm forces students out where the driver can see them, and works together with the red lights and stop arm."},
+{q:"What should you do if a car passes your bus illegally while the red lights are flashing?",a:["Chase the vehicle","Note the description and license plate if you can do so safely, keep students on the bus until it is clear, and report it","Wave students across anyway","Sound the horn and continue loading"],c:1,e:"Student safety first: hold everyone until the road is genuinely clear, then report the violation."},
+{q:"What is the rule about students standing while the bus is moving?",a:["Standing is allowed if the seats are full","Students must remain seated with the aisle clear whenever the bus is in motion","Standing is allowed in the rear only","Standing is allowed on short trips"],c:1,e:"Seated, facing forward, aisle clear. Loose students in a hard stop are a serious injury risk."},
+{q:"What should you check about the emergency exits on a school bus?",a:["That they open, close and latch properly and the buzzer works, and that they are not blocked","Only that they are closed","That they are locked shut","Nothing — they are sealed"],c:0,e:"Rear door, roof hatches and emergency windows must all operate and be unobstructed."},
+{q:"How does antilock braking help a school bus driver?",a:["It shortens every stop","It keeps the wheels from locking so you can steer around a hazard while braking hard","It replaces the pre-trip brake check","It applies the brakes automatically"],c:1,e:"ABS preserves steering during a hard stop — with children in the road, being able to steer matters more than a few feet of stopping distance."},
+{q:"What speed is appropriate on a school bus route in bad weather?",a:["The posted limit","Well below the posted limit, adjusted for traction, visibility and the extra stopping distance a loaded bus needs","Whatever keeps you on schedule","5 mph in all conditions"],c:1,e:"The schedule is never the priority. Reduce speed for conditions and report delays."},
+{q:"What should you do about students who are misbehaving on the bus?",a:["Discipline them while driving","Pull over in a safe location before addressing the behavior","Stop in a traffic lane","Order them off at the nearest corner"],c:1,e:"Never manage behavior while the bus is moving, and never discharge a student anywhere other than their assigned or a safe stop."},
+{q:"Why must you check the bus's mirrors for proper adjustment before every run?",a:["To meet inspection paperwork requirements","Because the crossover and convex mirrors are your only view of the danger zones where children are","To see the engine compartment","Only to see following traffic"],c:1,e:"Misadjusted mirrors leave blind spots exactly where children stand. Set them before you move."},
+{q:"What is required of a driver seeking the S endorsement in Texas?",a:["Only the school bus knowledge test","The school bus knowledge test, the passenger endorsement, a background check and a school bus skills test","A physical exam only","Two years of bus experience"],c:1,e:"The S endorsement requires the P endorsement, the school bus knowledge test, a skills test in a school bus, and background screening."}
+];
+
+/* Pre-Trip Inspection — Sections 2 and 11 of the Texas CMV Drivers Handbook. */
+window.CDL_BANK = window.CDL_BANK || {};
+window.CDL_BANK['pre-trip'] = [
+{q:"Why is the pre-trip inspection important?",a:["It is required paperwork only","Problems found before a trip prevent breakdowns and crashes, and defects put the vehicle out of service","It improves fuel mileage","It satisfies the insurance company"],c:1,e:"Inspection is how you find the failure before it finds you at 65 mph — and how you avoid being placed out of service at a roadside stop."},
+{q:"What are the three types of vehicle inspection a driver performs?",a:["Pre-trip, during-trip and post-trip","Annual, monthly and weekly","Federal, state and local","Visual, mechanical and electrical"],c:0,e:"Inspect before the trip, monitor gauges and check things en route, and complete a post-trip inspection and report at the end."},
+{q:"What must you do with the previous driver's vehicle inspection report?",a:["Discard it","Review it, and sign it only if defects were reported and certified repaired or determined not to need repair","Copy it and mail it in","Give it to the shipper"],c:1,e:"You must review the last report and confirm the noted defects were addressed before you sign and drive."},
+{q:"What is the very first thing to check when approaching the vehicle?",a:["The engine oil","The general condition — look for damage, leaning, and fresh puddles of oil, coolant or fuel underneath","The radio","The mirrors"],c:1,e:"Look at the whole vehicle and the ground beneath it before you touch anything. Puddles and a lean tell you a lot."},
+{q:"How much play should a belt have when checked?",a:["No more than about three-quarters of an inch","At least two inches","No play at all is required","Any amount is acceptable"],c:0,e:"Roughly three-quarters of an inch of play at the center of the longest span. Check for cracking, fraying and glazing too."},
+{q:"What should you check on the steering system?",a:["Only the steering wheel","Steering box mounting and bolts, missing nuts, arms and rods, and the play in the steering wheel","Only the tires","Only the power steering fluid"],c:1,e:"Look for loose or missing fasteners, cracks and worn or damaged linkage, plus power steering fluid level and hose condition."},
+{q:"Which suspension defect can place a vehicle out of service?",a:["One shock absorber with a small dent","Broken or missing leaves, or one-quarter or more of the leaves in a spring assembly broken","A clean spring hanger","Painted U-bolts"],c:1,e:"Missing, shifted or broken spring leaves are a serious defect; a quarter or more broken puts the vehicle out of service immediately."},
+{q:"What should you look for on the wheels and rims?",a:["Cracks, illegal welds, rust trails from the lug nuts, and missing or loose lugs","Only the color of the rim","Only the valve stem cap","Only the hubcap"],c:0,e:"Rust streaks radiating from a lug indicate it is loose. Cracked rims and welded repairs are out-of-service items."},
+{q:"How do you check dual tires for a defect that is easy to miss?",a:["Kick them","Make sure they are not touching each other and there is nothing wedged between them","Check the tread color","Look at the sidewall lettering"],c:1,e:"Duals that touch rub each other apart, and rocks lodged between them cause heat and blowouts."},
+{q:"What must be true of the hub oil seals and axle seals?",a:["A small leak is acceptable","They must not be leaking, and the oil level must be visible and adequate in the sight glass","They should be dry inside","They are not inspected"],c:1,e:"A leaking wheel seal contaminates the brake linings and destroys the bearing. It is a defect, not a maintenance suggestion."},
+{q:"What is checked on the exhaust system?",a:["Only the stack height","That it is secure, not leaking, not touching fuel lines or tires, and free of loose or missing mounting hardware","Only the muffler color","Only the smoke color"],c:1,e:"An exhaust leak can put carbon monoxide in the cab and start a fire against wiring or fuel lines."},
+{q:"What must be checked about the fuel tanks?",a:["That the caps are secure and there are no leaks around the tank or lines","That they are full","That they are painted","Only the fuel gauge reading"],c:0,e:"Secure mounting, tight caps, and no leaks — a fuel leak next to a hot exhaust is how truck fires begin."},
+{q:"What is the required emergency equipment on a commercial vehicle?",a:["A properly charged and rated fire extinguisher, spare electrical fuses if the vehicle uses them, and three warning devices","A flare gun and a first aid kit","A tow strap and jumper cables","A spare tire only"],c:0,e:"Confirm all three at every pre-trip — missing warning devices are a common and easy violation to avoid."},
+{q:"What should you check about the windshield and wipers?",a:["Only that the wipers move","No damaging cracks or obstructions in the driver's view, and wiper arms, blades and washer fluid in working order","Only the tint level","Only the washer nozzle"],c:1,e:"Cracks in the sweep area, torn blades and empty washer reservoirs all fail an inspection — and matter the moment it rains."},
+{q:"What must be checked about all lights and reflectors?",a:["That headlights work","That all required lights — headlights, turn signals, brake lights, clearance, marker and tail lights — and reflectors are clean, present and working","Only the brake lights","Only that they are the correct color"],c:1,e:"Walk the vehicle with the lights on. Burned-out marker lamps and dirty reflectors are among the most common roadside citations."},
+{q:"What is checked on the brake drums, shoes and linings?",a:["Only the drum temperature","No cracks longer than half the width of the friction area, linings not worn dangerously thin, and no oil or grease contamination","Only the color of the drum","Only the wheel seal"],c:1,e:"Cracked drums, thin linings and contaminated shoes all mean the brake will not do its share of the work."},
+{q:"What must you verify about the air brake slack adjusters?",a:["They are painted","Pushrod free play is within limits — no more than about an inch of movement when pulled by hand","They rotate freely","They are removed"],c:1,e:"Out-of-adjustment brakes are the single most common out-of-service violation found at roadside inspections."},
+{q:"Which cab controls must be checked before driving?",a:["Only the radio","Horn, wipers, lights, heater and defroster, gauges, mirrors, seat belt, and all warning lights and buzzers","Only the seat position","Only the steering wheel"],c:1,e:"Start the engine and confirm oil pressure, air pressure, ammeter and coolant temperature come up normally, and that warning lights go out."},
+{q:"What must be true of the seat belt?",a:["It must be present, and it must latch, adjust and be free of damage","It is optional in a commercial vehicle","It only needs to be present","It is checked annually"],c:0,e:"The belt must work and you must wear it — the most basic and most consistently effective piece of safety equipment in the vehicle."},
+{q:"What must you check about cargo securement before driving?",a:["Only the weight","That the cargo is properly distributed and secured, doors and tailgates are closed, and any required placards are in place","Only the trailer doors","Nothing if the shipper loaded it"],c:1,e:"You are responsible for the load regardless of who loaded it, and for having the correct placards displayed."},
+{q:"What should you check on the coupling area of a tractor-trailer?",a:["Only the air lines","Fifth wheel mounting and locking jaws closed on the kingpin with no gap, secure air and electrical lines, and the landing gear fully raised","Only the trailer plate","Only the mud flaps"],c:1,e:"The coupling is the single point of failure between the tractor and 40,000 pounds of trailer. Inspect it every time."},
+{q:"What should you look for in the engine compartment?",a:["Oil, coolant and power steering fluid levels, belts and hoses, wiring insulation, and any leaks","Only the oil level","Only the battery terminals","Only the air filter"],c:0,e:"Check the levels, look for cracked or leaking hoses, worn belts, and loose or corroded battery connections and wiring."},
+{q:"What must you do if you find a defect during the pre-trip inspection?",a:["Note it and drive anyway","Have it repaired before the trip if it affects safety, and record it on the inspection report","Report it at the end of the day","Repair it yourself in all cases"],c:1,e:"A vehicle with a safety defect does not leave the yard. Document it and get it corrected."},
+{q:"What does the post-trip inspection report accomplish?",a:["It records defects found so the carrier can repair them before the vehicle is used again","It calculates fuel taxes","It logs the driver's hours","It records the delivery time"],c:0,e:"The written report is how a defect gets from your walk-around to the shop, and how the next driver knows what to expect."}
+];
+
+/* Home page: render the test cards and the saved best scores. */
+(function () {
+  'use strict';
+
+  var R = window.CDL_ROUTING;
+  var STORE = 'wfe-cdl-best';
+
+  function bestScores() {
+    try { return JSON.parse(localStorage.getItem(STORE)) || {}; } catch (e) { return {}; }
+  }
+
+  function esc(s) {
+    return String(s).replace(/[&<>"]/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+    });
+  }
+
+  function render() {
+  var sections = window.CDL_SECTIONS || [];
+  var bank = window.CDL_BANK || {};
+  var best = bestScores();
+
+  var total = 0;
+  sections.forEach(function (s) { total += (bank[s.id] || []).length; });
+  var statEl = document.getElementById('stat-questions');
+  if (statEl) statEl.textContent = total;
+
+  var grid = document.getElementById('test-grid');
+  if (grid) {
+    grid.innerHTML = sections.map(function (s) {
+      var pool = (bank[s.id] || []).length;
+      var draw = Math.min(s.draw, pool);
+      var b = best[s.id];
+      var bestHtml = '';
+      if (b && typeof b.pct === 'number') {
+        var passed = b.pct >= 80;
+        bestHtml = '<div class="best' + (passed ? '' : ' fail') + '">Best score: ' + b.pct + '%' +
+          (passed ? ' &mdash; passing' : ' &mdash; keep going') + '</div>';
+      }
+      return '' +
+        '<article class="card">' +
+          '<span class="tag' + (s.tier === 'core' ? ' req' : '') + '">' + esc(s.code) + '</span>' +
+          '<h3>' + esc(s.name) + '</h3>' +
+          '<p class="blurb">' + esc(s.blurb) + '</p>' +
+          bestHtml +
+          '<div class="meta">' +
+            '<span><b>' + draw + '</b> questions</span>' +
+            '<span><b>' + s.pass + '</b> to pass (80%)</span>' +
+            '<span><b>' + pool + '</b> in the bank</span>' +
+          '</div>' +
+          '<div class="actions">' +
+            '<a class="btn" href="' + R.testUrl(s.id, 'study') + '">Study mode</a>' +
+            '<a class="btn secondary" href="' + R.testUrl(s.id, 'exam') + '">Exam mode</a>' +
+          '</div>' +
+        '</article>';
+    }).join('');
+  }
+
+  var links = document.getElementById('footer-links');
+  if (links) {
+    links.innerHTML = sections.map(function (s) {
+      return '<a href="' + R.testUrl(s.id, 'study') + '">' + esc(s.name) + '</a>';
+    }).join('<br>');
+  }
+  }
+
+  window.CDLHome = { render: render };
+  if (!window.CDL_ROUTER && document.getElementById('test-grid')) render();
+})();
+
+/* Quiz engine. URL: test.html?t=<section-id>&mode=study|exam */
+(function () {
+  'use strict';
+
+  var R = window.CDL_ROUTING;
+  var STORE = 'wfe-cdl-best';
+  var keysBound = false;
+
+  function esc(s) {
+    return String(s).replace(/[&<>"]/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+    });
+  }
+
+  function shuffle(arr) {
+    var a = arr.slice();
+    for (var i = a.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var t = a[i]; a[i] = a[j]; a[j] = t;
+    }
+    return a;
+  }
+
+  function saveBest(sectionId, pct) {
+    try {
+      var all = JSON.parse(localStorage.getItem(STORE)) || {};
+      if (!all[sectionId] || all[sectionId].pct < pct) {
+        all[sectionId] = { pct: pct, at: Date.now() };
+        localStorage.setItem(STORE, JSON.stringify(all));
+      }
+    } catch (e) { /* private browsing, blocked storage — scores just aren't remembered */ }
+  }
+
+  function init() {
+  var sections = window.CDL_SECTIONS || [];
+  var bank = window.CDL_BANK || {};
+  var sectionId = R.param('t');
+  var section = null;
+  for (var i = 0; i < sections.length; i++) {
+    if (sections[i].id === sectionId) { section = sections[i]; break; }
+  }
+
+  var root = document.getElementById('quiz-root');
+  var titleEl = document.getElementById('quiz-title');
+  var subEl = document.getElementById('quiz-sub');
+  var pillEl = document.getElementById('quiz-pill');
+  var barEl = document.getElementById('progress-bar');
+
+  if (!section) {
+    document.title = 'Test not found | Wichita Falls Equipment';
+    root.innerHTML = '<div class="question-card"><h2>Test not found</h2>' +
+      '<p>That practice test does not exist. Pick one from the list of Texas CDL tests.</p>' +
+      '<a class="btn" href="' + R.homeUrl + '">Back to all tests</a></div>';
+    return;
+  }
+
+  var mode = R.param('mode') === 'exam' ? 'exam' : 'study';
+  var pool = bank[section.id] || [];
+  var count = Math.min(section.draw, pool.length);
+  var needed = Math.ceil(count * 0.8);
+
+  document.title = section.name + ' Practice Test | Texas CDL | Wichita Falls Equipment';
+  titleEl.textContent = section.name;
+  subEl.textContent = section.manual;
+
+  var questions = [];
+  var answers = [];
+  var index = 0;
+
+  function start() {
+    questions = shuffle(pool).slice(0, count);
+    answers = new Array(count).fill(null);
+    index = 0;
+    render();
+  }
+
+  function setProgress(done) {
+    barEl.style.width = (count ? (done / count) * 100 : 0) + '%';
+  }
+
+  function renderIntro() {
+    pillEl.textContent = mode === 'exam' ? 'Exam mode' : 'Study mode';
+    setProgress(0);
+    root.innerHTML = '' +
+      '<div class="question-card">' +
+        '<h2>' + esc(section.name) + ' practice test</h2>' +
+        '<p>' + esc(section.blurb) + '</p>' +
+        '<div class="note"><p><b>Who needs this test:</b> ' + esc(section.who) + '</p></div>' +
+        '<div class="meta" style="display:flex;gap:20px;flex-wrap:wrap;margin:20px 0;font-size:.9rem;color:var(--muted)">' +
+          '<span><b style="color:var(--ink)">' + count + '</b> questions</span>' +
+          '<span><b style="color:var(--ink)">' + needed + '</b> correct to pass (80%)</span>' +
+          '<span>drawn from <b style="color:var(--ink)">' + pool.length + '</b> in the bank</span>' +
+        '</div>' +
+        '<div class="mode-choice">' +
+          '<button class="mode-card" data-mode="study"><b>Study mode</b><span>Answer, then see immediately whether you were right and why. Best for learning the material.</span></button>' +
+          '<button class="mode-card" data-mode="exam"><b>Exam mode</b><span>No feedback until the end, then a pass or fail against the 80% bar. Best for checking if you are ready.</span></button>' +
+        '</div>' +
+        '<a class="btn ghost" href="' + R.homeUrl + '">All tests</a>' +
+      '</div>';
+
+    Array.prototype.forEach.call(root.querySelectorAll('.mode-card'), function (b) {
+      b.addEventListener('click', function () {
+        mode = b.getAttribute('data-mode');
+        R.setMode(section.id, mode);
+        start();
+      });
+    });
+  }
+
+  function render() {
+    var q = questions[index];
+    var picked = answers[index];
+    var reveal = mode === 'study' && picked !== null;
+
+    pillEl.textContent = (mode === 'exam' ? 'Exam' : 'Study') + ' · ' + (index + 1) + ' of ' + count;
+    setProgress(index + (picked !== null ? 1 : 0));
+
+    var opts = q.a.map(function (text, i) {
+      var cls = 'option';
+      if (reveal) {
+        if (i === q.c) cls += ' correct';
+        else if (i === picked) cls += ' wrong';
+      } else if (i === picked) {
+        cls += ' selected';
+      }
+      return '<button class="' + cls + '" data-i="' + i + '"' + (reveal ? ' disabled' : '') + '>' +
+        '<span class="key">' + 'ABCD'.charAt(i) + '</span>' +
+        '<span>' + esc(text) + '</span></button>';
+    }).join('');
+
+    var explain = '';
+    if (reveal) {
+      var right = picked === q.c;
+      explain = '<div class="explain ' + (right ? 'right' : 'wrong') + '">' +
+        '<b>' + (right ? 'Correct' : 'Not quite — the answer is ' + 'ABCD'.charAt(q.c)) + '</b>' +
+        esc(q.e) + '</div>';
+    }
+
+    var isLast = index === count - 1;
+    root.innerHTML = '' +
+      '<div class="question-card">' +
+        '<div class="qnum">Question ' + (index + 1) + ' of ' + count + '</div>' +
+        '<div class="qtext">' + esc(q.q) + '</div>' +
+        '<div class="options">' + opts + '</div>' +
+        explain +
+      '</div>' +
+      '<div class="quiz-actions">' +
+        '<button class="btn secondary" id="prev"' + (index === 0 ? ' disabled' : '') + '>Back</button>' +
+        '<button class="btn" id="next"' + (picked === null ? ' disabled' : '') + '>' +
+          (isLast ? 'Finish and see score' : 'Next question') + '</button>' +
+        '<span class="spacer"></span>' +
+        '<a class="btn ghost" href="' + R.homeUrl + '">Quit</a>' +
+      '</div>';
+
+    Array.prototype.forEach.call(root.querySelectorAll('.option'), function (b) {
+      b.addEventListener('click', function () {
+        answers[index] = parseInt(b.getAttribute('data-i'), 10);
+        if (mode === 'exam' && index < count - 1) {
+          index++;
+          render();
+        } else {
+          render();
+        }
+      });
+    });
+
+    var prev = document.getElementById('prev');
+    if (prev) prev.addEventListener('click', function () { if (index > 0) { index--; render(); } });
+    var next = document.getElementById('next');
+    if (next) next.addEventListener('click', function () {
+      if (answers[index] === null) return;
+      if (isLast) finish(); else { index++; render(); }
+    });
+  }
+
+  function finish() {
+    var correct = 0;
+    questions.forEach(function (q, i) { if (answers[i] === q.c) correct++; });
+    var pct = Math.round((correct / count) * 100);
+    var passed = correct >= needed;
+    saveBest(section.id, pct);
+    setProgress(count);
+    pillEl.textContent = 'Results';
+    pillEl.className = 'pill' + (passed ? '' : ' warn');
+
+    var missed = questions.map(function (q, i) { return { q: q, picked: answers[i] }; })
+      .filter(function (r) { return r.picked !== r.q.c; });
+
+    var reviewHtml = missed.length
+      ? '<div class="question-card"><h2>Review what you missed (' + missed.length + ')</h2>' +
+          missed.map(function (r) {
+            return '<div class="review-item">' +
+              '<div class="qtext">' + esc(r.q.q) + '</div>' +
+              '<div class="review-line you"><span class="lbl">You chose</span><span class="val">' +
+                esc(r.picked === null ? 'No answer' : r.q.a[r.picked]) + '</span></div>' +
+              '<div class="review-line ans"><span class="lbl">Correct</span><span class="val">' +
+                esc(r.q.a[r.q.c]) + '</span></div>' +
+              '<div class="explain">' + esc(r.q.e) + '</div>' +
+            '</div>';
+          }).join('') +
+        '</div>'
+      : '<div class="question-card"><h2>Nothing missed</h2><p style="margin-bottom:0">A perfect run. Take it again ' +
+        'in a day or two &mdash; the bank is bigger than one test, so you will see questions you have not answered yet.</p></div>';
+
+    root.innerHTML = '' +
+      '<div class="score-hero">' +
+        '<div class="score-ring ' + (passed ? 'pass' : 'fail') + '">' + pct + '%</div>' +
+        '<div class="verdict ' + (passed ? 'pass' : 'fail') + '">' + (passed ? 'Passed' : 'Not passing yet') + '</div>' +
+        '<div class="score-detail">' + correct + ' of ' + count + ' correct. Texas requires ' + needed +
+          ' correct (80%) on the ' + esc(section.name) + ' exam.</div>' +
+        '<div class="quiz-actions" style="justify-content:center">' +
+          '<button class="btn" id="again">Take it again</button>' +
+          '<a class="btn secondary" href="' + R.testUrl(section.id, mode === 'exam' ? 'study' : 'exam') +
+            '">Switch to ' + (mode === 'exam' ? 'study' : 'exam') + ' mode</a>' +
+          '<a class="btn ghost" href="' + R.homeUrl + '">All tests</a>' +
+        '</div>' +
+        (passed ? '' : '<p style="margin:18px 0 0;font-size:.9rem;color:var(--muted)">Read ' +
+          esc(section.manual) + ' before your next attempt.</p>') +
+      '</div>' +
+      reviewHtml;
+
+    document.getElementById('again').addEventListener('click', function () {
+      pillEl.className = 'pill';
+      start();
+      window.scrollTo(0, 0);
+    });
+  }
+
+  if (!keysBound) {
+    keysBound = true;
+    document.addEventListener('keydown', function (e) {
+      var k = e.key.toLowerCase();
+      var map = { a: 0, b: 1, c: 2, d: 3, '1': 0, '2': 1, '3': 2, '4': 3 };
+      if (k in map) {
+        var btn = document.querySelector('#quiz-root .option[data-i="' + map[k] + '"]:not([disabled])');
+        if (btn) btn.click();
+      } else if (e.key === 'Enter') {
+        var next = document.getElementById('next');
+        if (next && !next.disabled) next.click();
+      }
+    });
+  }
+
+  renderIntro();
+  }
+
+  window.CDLQuiz = { init: init };
+  if (!window.CDL_ROUTER && document.getElementById('quiz-root')) init();
+})();
+
+
+function route() {
+  if (suppress) { suppress = false; return; }
+  var onTest = /^#\/t\//.test(window.location.hash || '');
+  document.getElementById('view-home').hidden = onTest;
+  document.getElementById('view-test').hidden = !onTest;
+  if (onTest) { window.CDLQuiz.init(); } else { window.CDLHome.render(); }
+  // Only jump to the top for app routes; in-page anchors (#which, #howto) keep browser behavior.
+  if (/^#\/(?:$|t\/)/.test(window.location.hash || '#/')) window.scrollTo(0, 0);
+}
+window.addEventListener('hashchange', route);
+route();
+
+</script>
+</body>
+</html>

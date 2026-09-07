@@ -2,17 +2,14 @@
 (function () {
   'use strict';
 
+  var R = window.CDL_ROUTING;
   var STORE = 'wfe-cdl-best';
+  var keysBound = false;
 
   function esc(s) {
     return String(s).replace(/[&<>"]/g, function (c) {
       return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
     });
-  }
-
-  function param(name) {
-    var m = new RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
-    return m ? decodeURIComponent(m[1].replace(/\+/g, ' ')) : '';
   }
 
   function shuffle(arr) {
@@ -34,9 +31,10 @@
     } catch (e) { /* private browsing, blocked storage — scores just aren't remembered */ }
   }
 
+  function init() {
   var sections = window.CDL_SECTIONS || [];
   var bank = window.CDL_BANK || {};
-  var sectionId = param('t');
+  var sectionId = R.param('t');
   var section = null;
   for (var i = 0; i < sections.length; i++) {
     if (sections[i].id === sectionId) { section = sections[i]; break; }
@@ -52,11 +50,11 @@
     document.title = 'Test not found | Wichita Falls Equipment';
     root.innerHTML = '<div class="question-card"><h2>Test not found</h2>' +
       '<p>That practice test does not exist. Pick one from the list of Texas CDL tests.</p>' +
-      '<a class="btn" href="./">Back to all tests</a></div>';
+      '<a class="btn" href="' + R.homeUrl + '">Back to all tests</a></div>';
     return;
   }
 
-  var mode = param('mode') === 'exam' ? 'exam' : 'study';
+  var mode = R.param('mode') === 'exam' ? 'exam' : 'study';
   var pool = bank[section.id] || [];
   var count = Math.min(section.draw, pool.length);
   var needed = Math.ceil(count * 0.8);
@@ -97,13 +95,13 @@
           '<button class="mode-card" data-mode="study"><b>Study mode</b><span>Answer, then see immediately whether you were right and why. Best for learning the material.</span></button>' +
           '<button class="mode-card" data-mode="exam"><b>Exam mode</b><span>No feedback until the end, then a pass or fail against the 80% bar. Best for checking if you are ready.</span></button>' +
         '</div>' +
-        '<a class="btn ghost" href="./">All tests</a>' +
+        '<a class="btn ghost" href="' + R.homeUrl + '">All tests</a>' +
       '</div>';
 
     Array.prototype.forEach.call(root.querySelectorAll('.mode-card'), function (b) {
       b.addEventListener('click', function () {
         mode = b.getAttribute('data-mode');
-        history.replaceState(null, '', 'test.html?t=' + encodeURIComponent(section.id) + '&mode=' + mode);
+        R.setMode(section.id, mode);
         start();
       });
     });
@@ -151,7 +149,7 @@
         '<button class="btn" id="next"' + (picked === null ? ' disabled' : '') + '>' +
           (isLast ? 'Finish and see score' : 'Next question') + '</button>' +
         '<span class="spacer"></span>' +
-        '<a class="btn ghost" href="./">Quit</a>' +
+        '<a class="btn ghost" href="' + R.homeUrl + '">Quit</a>' +
       '</div>';
 
     Array.prototype.forEach.call(root.querySelectorAll('.option'), function (b) {
@@ -212,10 +210,9 @@
           ' correct (80%) on the ' + esc(section.name) + ' exam.</div>' +
         '<div class="quiz-actions" style="justify-content:center">' +
           '<button class="btn" id="again">Take it again</button>' +
-          '<a class="btn secondary" href="test.html?t=' + encodeURIComponent(section.id) +
-            '&mode=' + (mode === 'exam' ? 'study' : 'exam') + '">Switch to ' +
-            (mode === 'exam' ? 'study' : 'exam') + ' mode</a>' +
-          '<a class="btn ghost" href="./">All tests</a>' +
+          '<a class="btn secondary" href="' + R.testUrl(section.id, mode === 'exam' ? 'study' : 'exam') +
+            '">Switch to ' + (mode === 'exam' ? 'study' : 'exam') + ' mode</a>' +
+          '<a class="btn ghost" href="' + R.homeUrl + '">All tests</a>' +
         '</div>' +
         (passed ? '' : '<p style="margin:18px 0 0;font-size:.9rem;color:var(--muted)">Read ' +
           esc(section.manual) + ' before your next attempt.</p>') +
@@ -229,17 +226,24 @@
     });
   }
 
-  document.addEventListener('keydown', function (e) {
-    var k = e.key.toLowerCase();
-    var map = { a: 0, b: 1, c: 2, d: 3, '1': 0, '2': 1, '3': 2, '4': 3 };
-    if (k in map) {
-      var btn = root.querySelector('.option[data-i="' + map[k] + '"]:not([disabled])');
-      if (btn) btn.click();
-    } else if (e.key === 'Enter') {
-      var next = document.getElementById('next');
-      if (next && !next.disabled) next.click();
-    }
-  });
+  if (!keysBound) {
+    keysBound = true;
+    document.addEventListener('keydown', function (e) {
+      var k = e.key.toLowerCase();
+      var map = { a: 0, b: 1, c: 2, d: 3, '1': 0, '2': 1, '3': 2, '4': 3 };
+      if (k in map) {
+        var btn = document.querySelector('#quiz-root .option[data-i="' + map[k] + '"]:not([disabled])');
+        if (btn) btn.click();
+      } else if (e.key === 'Enter') {
+        var next = document.getElementById('next');
+        if (next && !next.disabled) next.click();
+      }
+    });
+  }
 
   renderIntro();
+  }
+
+  window.CDLQuiz = { init: init };
+  if (!window.CDL_ROUTER && document.getElementById('quiz-root')) init();
 })();
