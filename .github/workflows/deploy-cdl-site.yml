@@ -1,0 +1,66 @@
+# Deploys cdl-site/ to Cloudflare Pages.
+#
+# One-time setup (only you can do these — they need your Cloudflare account):
+#   1. Cloudflare dashboard → Workers & Pages → Create → Pages → "Direct Upload",
+#      name the project  wichita-falls-cdl  (or change PROJECT_NAME below to match).
+#   2. My Profile → API Tokens → Create Token → template "Edit Cloudflare Workers",
+#      or a custom token with the  Account › Cloudflare Pages › Edit  permission.
+#   3. This repo → Settings → Secrets and variables → Actions → New repository secret:
+#        CLOUDFLARE_API_TOKEN   the token from step 2
+#        CLOUDFLARE_ACCOUNT_ID  Cloudflare dashboard → Workers & Pages → Account ID
+#   4. Run this workflow (Actions tab → Deploy CDL site → Run workflow), or push to
+#      one of the branches below.
+#   5. Pages project → Custom domains → Set up a domain → cdl.wichitafallsequipment.com,
+#      then add the DNS record Cloudflare shows you at whoever hosts the domain's DNS.
+#
+# Note: the CNAME file in cdl-site/ is a GitHub Pages convention. Cloudflare Pages ignores
+# it — the custom domain is attached in step 5 instead.
+
+name: Deploy CDL site
+
+on:
+  push:
+    branches:
+      - master
+      - claude/wichita-falls-cdl-tests-xrkwq3
+    paths:
+      - 'cdl-site/**'
+      - '.github/workflows/deploy-cdl-site.yml'
+  workflow_dispatch:
+
+env:
+  PROJECT_NAME: wichita-falls-cdl
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # Regenerate the single-file bundle so dist/ can never ship stale.
+      - name: Build single-file bundle
+        working-directory: cdl-site
+        run: node build-standalone.js
+
+      # Stage only what should be publicly served — not the README or the build script.
+      - name: Stage publish directory
+        run: |
+          mkdir -p publish
+          cp -r cdl-site/assets cdl-site/data cdl-site/dist publish/
+          cp cdl-site/index.html cdl-site/test.html cdl-site/robots.txt \
+             cdl-site/sitemap.xml cdl-site/CNAME publish/
+          echo "Publishing:" && find publish -type f | sort
+
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy publish --project-name=${{ env.PROJECT_NAME }} --branch=main
